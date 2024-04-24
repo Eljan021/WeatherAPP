@@ -72,10 +72,8 @@
 		924DA75A2BD940D00097AADC /* WeatherAPP */ = {
 			isa = PBXGroup;
 			children = (
-				924DA75B2BD940D00097AADC /* AppDelegate.swift */,
-				924DA75D2BD940D00097AADC /* SceneDelegate.swift */,
-				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
-				924DA7612BD940D00097AADC /* Login.storyboard */,
+				924DA7952BD963850097AADC /* Core */,
+				924DA7942BD9637A0097AADC /* Auth */,
 				924DA7822BD962900097AADC /* Helpers */,
 				924DA7642BD940D20097AADC /* Assets.xcassets */,
 				924DA7662BD940D20097AADC /* LaunchScreen.storyboard */,
@@ -95,6 +93,48 @@
 				924DA7882BD962980097AADC /* UserDefaultsHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		924DA7942BD9637A0097AADC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				924DA7612BD940D00097AADC /* Login.storyboard */,
+				924DA7982BD963BD0097AADC /* Model */,
+				924DA7972BD963A10097AADC /* Controller */,
+				924DA7962BD963970097AADC /* ViewModel */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		924DA7952BD963850097AADC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				924DA75B2BD940D00097AADC /* AppDelegate.swift */,
+				924DA75D2BD940D00097AADC /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		924DA7962BD963970097AADC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		924DA7972BD963A10097AADC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		924DA7982BD963BD0097AADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
