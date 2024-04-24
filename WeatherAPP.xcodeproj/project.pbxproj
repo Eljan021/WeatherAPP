@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75B2BD940D00097AADC /* AppDelegate.swift */; };
 		924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75D2BD940D00097AADC /* SceneDelegate.swift */; };
-		924DA7602BD940D00097AADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75F2BD940D00097AADC /* ViewController.swift */; };
+		924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75F2BD940D00097AADC /* LoginViewController.swift */; };
 		924DA7632BD940D00097AADC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 924DA7622BD940D00097AADC /* Base */; };
 		924DA7652BD940D20097AADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924DA7642BD940D20097AADC /* Assets.xcassets */; };
 		924DA7682BD940D20097AADC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 924DA7672BD940D20097AADC /* Base */; };
+		924DA7892BD962980097AADC /* Layout_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7832BD962980097AADC /* Layout_Extension.swift */; };
+		924DA78A2BD962980097AADC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7842BD962980097AADC /* Extensions.swift */; };
+		924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7852BD962980097AADC /* NetworkHelper.swift */; };
+		924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7862BD962980097AADC /* KeychainHelper.swift */; };
+		924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7872BD962980097AADC /* NetworkManager.swift */; };
+		924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7882BD962980097AADC /* UserDefaultsHelper.swift */; };
+		924DA7912BD962A80097AADC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7902BD962A80097AADC /* SDWebImage */; };
+		924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7922BD962A80097AADC /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		924DA7582BD940D00097AADC /* WeatherAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924DA75B2BD940D00097AADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924DA75D2BD940D00097AADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		924DA75F2BD940D00097AADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		924DA7622BD940D00097AADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		924DA75F2BD940D00097AADC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		924DA7622BD940D00097AADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		924DA7642BD940D20097AADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924DA7672BD940D20097AADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924DA7692BD940D20097AADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924DA7832BD962980097AADC /* Layout_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout_Extension.swift; sourceTree = "<group>"; };
+		924DA7842BD962980097AADC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		924DA7852BD962980097AADC /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		924DA7862BD962980097AADC /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		924DA7872BD962980097AADC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		924DA7882BD962980097AADC /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */,
+				924DA7912BD962A80097AADC /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +74,27 @@
 			children = (
 				924DA75B2BD940D00097AADC /* AppDelegate.swift */,
 				924DA75D2BD940D00097AADC /* SceneDelegate.swift */,
-				924DA75F2BD940D00097AADC /* ViewController.swift */,
-				924DA7612BD940D00097AADC /* Main.storyboard */,
+				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
+				924DA7612BD940D00097AADC /* Login.storyboard */,
+				924DA7822BD962900097AADC /* Helpers */,
 				924DA7642BD940D20097AADC /* Assets.xcassets */,
 				924DA7662BD940D20097AADC /* LaunchScreen.storyboard */,
 				924DA7692BD940D20097AADC /* Info.plist */,
 			);
 			path = WeatherAPP;
+			sourceTree = "<group>";
+		};
+		924DA7822BD962900097AADC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				924DA7842BD962980097AADC /* Extensions.swift */,
+				924DA7862BD962980097AADC /* KeychainHelper.swift */,
+				924DA7832BD962980097AADC /* Layout_Extension.swift */,
+				924DA7852BD962980097AADC /* NetworkHelper.swift */,
+				924DA7872BD962980097AADC /* NetworkManager.swift */,
+				924DA7882BD962980097AADC /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,10 @@
 			dependencies = (
 			);
 			name = WeatherAPP;
+			packageProductDependencies = (
+				924DA7902BD962A80097AADC /* SDWebImage */,
+				924DA7922BD962A80097AADC /* SDWebImageMapKit */,
+			);
 			productName = WeatherAPP;
 			productReference = 924DA7582BD940D00097AADC /* WeatherAPP.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 924DA74F2BD940D00097AADC;
+			packageReferences = (
+				924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 924DA7592BD940D00097AADC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924DA7602BD940D00097AADC /* ViewController.swift in Sources */,
+				924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */,
+				924DA78A2BD962980097AADC /* Extensions.swift in Sources */,
+				924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */,
+				924DA7892BD962980097AADC /* Layout_Extension.swift in Sources */,
 				924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */,
+				924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */,
+				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
+				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,12 +190,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		924DA7612BD940D00097AADC /* Main.storyboard */ = {
+		924DA7612BD940D00097AADC /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				924DA7622BD940D00097AADC /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		924DA7662BD940D20097AADC /* LaunchScreen.storyboard */ = {
@@ -297,7 +340,7 @@
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +368,7 @@
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +406,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		924DA7902BD962A80097AADC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		924DA7922BD962A80097AADC /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 924DA7502BD940D00097AADC /* Project object */;
 }
