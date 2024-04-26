@@ -100,7 +100,7 @@
 		924DA7942BD9637A0097AADC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				924DA7612BD940D00097AADC /* Login.storyboard */,
+				924DA79B2BDC6BE00097AADC /* Views */,
 				924DA7982BD963BD0097AADC /* Model */,
 				924DA7972BD963A10097AADC /* Controller */,
 				924DA7962BD963970097AADC /* ViewModel */,
@@ -138,6 +138,38 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		924DA79B2BDC6BE00097AADC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				924DA79E2BDC6C480097AADC /* Cells */,
+				924DA79D2BDC6C2A0097AADC /* CustomView */,
+				924DA79C2BDC6C1B0097AADC /* Storyoards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		924DA79C2BDC6C1B0097AADC /* Storyoards */ = {
+			isa = PBXGroup;
+			children = (
+				924DA7612BD940D00097AADC /* Login.storyboard */,
+			);
+			path = Storyoards;
+			sourceTree = "<group>";
+		};
+		924DA79D2BDC6C2A0097AADC /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		924DA79E2BDC6C480097AADC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
