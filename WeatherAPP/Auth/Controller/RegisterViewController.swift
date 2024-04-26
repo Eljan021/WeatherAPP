@@ -9,6 +9,20 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet private weak var userNameLabel: UILabel!
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var surnameNameLabel: UILabel!
+    @IBOutlet private weak var surnameNameTextField: UITextField!
+    @IBOutlet private weak var emailLabel: UILabel!
+    @IBOutlet private weak var emailTextField: UITextField!
+
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
