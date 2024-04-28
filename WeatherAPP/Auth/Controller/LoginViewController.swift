@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginclicked(_ sender: Any) {
+        isemptyCheck()
         
     }
     
@@ -34,7 +35,22 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
      
     }
-    
+    fileprivate func isemptyCheck(){
+        
+        if userNameTextField.text?.isEmpty ?? false || passwordTextField.text?.isEmpty ?? false {
+            let alertController = UIAlertController(
+                title: "Error",
+                message: "Not logged in",
+                preferredStyle: .alert)
+            
+            alertController.addAction(
+                UIAlertAction(
+                    title: "Close",
+                    style: .cancel))
+            present(alertController,animated: true)
+       
+        }
+    }
    
     
     
