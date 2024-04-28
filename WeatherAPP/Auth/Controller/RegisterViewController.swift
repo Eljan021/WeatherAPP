@@ -21,11 +21,17 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func backToLoginClicked(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
+//        func backtologim(){
+//            navigationController?.popViewController(animated: true)
+//        }
 
         // Do any additional setup after loading the view.
     }

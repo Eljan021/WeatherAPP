@@ -16,6 +16,10 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
 
     @IBAction func forgotPassword(_ sender: Any) {
+        let vc = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
+        
+        navigationController?.pushViewController(vc!, animated: true)
+        
     }
     
 

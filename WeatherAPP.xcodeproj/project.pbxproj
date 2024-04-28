@@ -139,6 +139,7 @@
 		924DA79B2BDC6BE00097AADC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				924DA7A62BDE448B0097AADC /* Model */,
 				924DA79E2BDC6C480097AADC /* Cells */,
 				924DA79D2BDC6C2A0097AADC /* CustomView */,
 				924DA79C2BDC6C1B0097AADC /* Storyoards */,
@@ -166,6 +167,13 @@
 			children = (
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		924DA7A62BDE448B0097AADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
