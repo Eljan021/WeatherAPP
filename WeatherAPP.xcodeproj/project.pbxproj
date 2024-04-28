@@ -22,8 +22,6 @@
 		924DA7912BD962A80097AADC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7902BD962A80097AADC /* SDWebImage */; };
 		924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7922BD962A80097AADC /* SDWebImageMapKit */; };
 		924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7992BD964580097AADC /* RegisterViewController.swift */; };
-		924DA7A32BDE43D20097AADC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7A22BDE43D20097AADC /* Realm */; };
-		924DA7A52BDE43D20097AADC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7A42BDE43D20097AADC /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924DA7A52BDE43D20097AADC /* RealmSwift in Frameworks */,
-				924DA7A32BDE43D20097AADC /* Realm in Frameworks */,
 				924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */,
 				924DA7912BD962A80097AADC /* SDWebImage in Frameworks */,
 			);
@@ -195,8 +191,6 @@
 			packageProductDependencies = (
 				924DA7902BD962A80097AADC /* SDWebImage */,
 				924DA7922BD962A80097AADC /* SDWebImageMapKit */,
-				924DA7A22BDE43D20097AADC /* Realm */,
-				924DA7A42BDE43D20097AADC /* RealmSwift */,
 			);
 			productName = WeatherAPP;
 			productReference = 924DA7582BD940D00097AADC /* WeatherAPP.app */;
@@ -228,7 +222,6 @@
 			mainGroup = 924DA74F2BD940D00097AADC;
 			packageReferences = (
 				924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				924DA7A12BDE43D20097AADC /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 924DA7592BD940D00097AADC /* Products */;
 			projectDirPath = "";
@@ -499,14 +492,6 @@
 				minimumVersion = 5.19.1;
 			};
 		};
-		924DA7A12BDE43D20097AADC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -519,16 +504,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
-		};
-		924DA7A22BDE43D20097AADC /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 924DA7A12BDE43D20097AADC /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		924DA7A42BDE43D20097AADC /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 924DA7A12BDE43D20097AADC /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
