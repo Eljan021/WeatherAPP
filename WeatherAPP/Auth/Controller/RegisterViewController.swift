@@ -17,14 +17,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet private weak var surnameNameTextField: UITextField!
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var backToLoginButton: UIButton!
+    @IBOutlet private weak var signInbutton: UIButton!
     @IBOutlet private weak var backbutton: UIButton!
     
     @IBAction func backClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func backToLoginClicked(_ sender: Any) {
+    @IBAction func signInClicked(_ sender: Any) {
         isemptyCheck()
         
     }
@@ -37,6 +37,18 @@ class RegisterViewController: UIViewController {
         passwordTextField.delegate = self
         emailTextField.delegate = self
         surnameNameTextField.delegate = self
+    }
+    fileprivate func configureView(){
+        signInbutton.layer.borderColor = UIColor.systemIndigo.cgColor
+        signInbutton.layer.borderWidth = 1.0
+        signInbutton.layer.cornerRadius = 12
+        userNameTextField.layer.borderWidth = 1.0
+        userNameTextField.layer.borderColor = UIColor.systemIndigo.cgColor
+        userNameTextField.layer.cornerRadius = 8
+        passwordTextField.layer.borderWidth = 1.0
+        passwordTextField.layer.borderColor = UIColor.systemIndigo.cgColor
+        passwordTextField.layer.cornerRadius = 8
+        
     }
     
     

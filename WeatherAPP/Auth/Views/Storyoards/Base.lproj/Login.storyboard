@@ -288,7 +288,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="backToLoginClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="dZj-Px-qzp"/>
+                                            <action selector="signInClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="9V2-Ru-s3x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -353,12 +353,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backToLoginButton" destination="Z5w-Rz-sBV" id="co8-4U-fQR"/>
                         <outlet property="backbutton" destination="6sA-wX-f0e" id="Bcf-4H-eZJ"/>
                         <outlet property="emailLabel" destination="7Qu-M7-y3j" id="ECB-6q-Abi"/>
                         <outlet property="emailTextField" destination="bRu-3a-os0" id="voQ-iF-uKG"/>
                         <outlet property="passwordLabel" destination="pUQ-4c-agK" id="COc-UD-bBe"/>
                         <outlet property="passwordTextField" destination="sQo-gp-did" id="Ymv-al-pzf"/>
+                        <outlet property="signInbutton" destination="Z5w-Rz-sBV" id="tmU-eC-cQM"/>
                         <outlet property="surnameNameLabel" destination="Wu3-tp-TC8" id="Xq3-Cx-378"/>
                         <outlet property="surnameNameTextField" destination="FXc-9z-Zkw" id="XLE-JT-jbQ"/>
                         <outlet property="userNameLabel" destination="Kad-Tn-ar0" id="OTf-yV-AxV"/>
