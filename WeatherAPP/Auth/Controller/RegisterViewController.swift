@@ -18,7 +18,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var backToLoginButton: UIButton!
+    @IBOutlet private weak var backbutton: UIButton!
     
+    @IBAction func backClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func backToLoginClicked(_ sender: Any) {
         isemptyCheck()

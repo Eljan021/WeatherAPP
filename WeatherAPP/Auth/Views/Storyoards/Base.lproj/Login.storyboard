@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -313,13 +314,29 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sA-wX-f0e">
+                                        <rect key="frame" x="12" y="48" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="SVF-t7-ATE"/>
+                                            <constraint firstAttribute="height" constant="72" id="qyW-s5-5d9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="arrow.uturn.left" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="hHe-ys-wfL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19856052639999999" green="0.13385266809999999" blue="0.37645565920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="6sA-wX-f0e" firstAttribute="leading" secondItem="Uoa-VN-lPr" secondAttribute="leading" constant="12" id="2lX-SC-krn"/>
                                     <constraint firstAttribute="height" constant="128" id="BUt-dc-qQD"/>
                                     <constraint firstItem="eeM-4F-6VX" firstAttribute="leading" secondItem="Uoa-VN-lPr" secondAttribute="leading" constant="144" id="GWL-S6-9nf"/>
                                     <constraint firstAttribute="trailing" secondItem="eeM-4F-6VX" secondAttribute="trailing" constant="144" id="ZwO-jc-w0w"/>
                                     <constraint firstAttribute="bottom" secondItem="eeM-4F-6VX" secondAttribute="bottom" constant="19" id="jpa-Af-AQV"/>
+                                    <constraint firstAttribute="bottom" secondItem="6sA-wX-f0e" secondAttribute="bottom" constant="8" id="zFe-uh-RPe"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -337,6 +354,7 @@
                     </view>
                     <connections>
                         <outlet property="backToLoginButton" destination="Z5w-Rz-sBV" id="co8-4U-fQR"/>
+                        <outlet property="backbutton" destination="6sA-wX-f0e" id="Bcf-4H-eZJ"/>
                         <outlet property="emailLabel" destination="7Qu-M7-y3j" id="ECB-6q-Abi"/>
                         <outlet property="emailTextField" destination="bRu-3a-os0" id="voQ-iF-uKG"/>
                         <outlet property="passwordLabel" destination="pUQ-4c-agK" id="COc-UD-bBe"/>
@@ -353,6 +371,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.uturn.left" catalog="system" width="128" height="113"/>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
