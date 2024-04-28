@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordLabel: UILabel!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var signUpbutton: UIButton!
+    @IBOutlet private weak var signInbutton: UIButton!
     
     @IBAction func signUp(_ sender: Any) {
         let vc = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
@@ -23,13 +24,18 @@ class LoginViewController: UIViewController {
         
     }
     
+    @IBAction func loginclicked(_ sender: Any) {
+        
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
+    
+   
     
     
 }

@@ -21,8 +21,8 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func backToLoginClicked(_ sender: Any) {
-    registerAlert()
-
+        isemptyCheck()
+        
     }
     
     
@@ -36,20 +36,29 @@ class RegisterViewController: UIViewController {
     }
     
     
-    func registerAlert() {
-        let alertController = UIAlertController(
-            title: "",
-            message: "You have registered",
-            preferredStyle: .alert)
+    fileprivate func isemptyCheck(){
         
-        alertController.addAction(
-            UIAlertAction(title: "Close",
-                          style:UIAlertAction.Style.default,
-                          handler: {ac in
-                              self.navigationController?.popViewController(animated: true)
-                          }))
-        present(alertController , animated: true, completion: nil)
-        
+        if userNameTextField.text?.isEmpty ?? false || passwordTextField.text?.isEmpty ?? false
+            || surnameNameTextField.text?.isEmpty ?? false || emailTextField.text?.isEmpty ?? false {
+            let alertController = UIAlertController(
+                title: "Error",
+                message: "Account could not be created",
+                preferredStyle: .alert)
+            
+            alertController.addAction(
+                UIAlertAction(
+                    title: "Close",
+                    style: .cancel))
+            present(alertController,animated: true)
+        }else{
+            let alertController = UIAlertController(
+                title: "",
+                message: "Account created",
+                preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {ac in
+                self.navigationController?.popViewController(animated: true)}))
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     
