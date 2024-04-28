@@ -59,7 +59,7 @@ extension RegisterViewController: UITextFieldDelegate {
         case userNameTextField:
             if (userNameTextField.text?.count ?? 0) > 3 {userNameTextField.layer.borderWidth = 0} else {
                 userNameTextField.layer.borderWidth = 1
-                userNameLabel.layer.borderColor = UIColor.red.cgColor
+                userNameTextField.layer.borderColor = UIColor.red.cgColor
                 
             }
         case surnameNameTextField:

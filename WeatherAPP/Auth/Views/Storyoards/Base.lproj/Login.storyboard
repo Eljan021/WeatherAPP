@@ -80,25 +80,44 @@
                                             <constraint firstAttribute="trailing" secondItem="EPr-e3-hj9" secondAttribute="trailing" constant="24" id="wJv-Ur-Kqr"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-UO-eaw">
-                                        <rect key="frame" x="72" y="218" width="249" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Sign Up"/>
-                                        <connections>
-                                            <action selector="forgotPassword:" destination="x4g-FA-rDA" eventType="touchUpInside" id="AK4-SA-vm4"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eLs-or-bCM">
+                                        <rect key="frame" x="24" y="218.00000000000003" width="345" height="79.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp4-UO-eaw">
+                                                <rect key="frame" x="130.66666666666666" y="0.0" width="84" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Sign Up">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUp:" destination="x4g-FA-rDA" eventType="touchUpInside" id="YjA-aL-Z4m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcv-TQ-Hdl">
+                                                <rect key="frame" x="137.33333333333334" y="42.333333333333314" width="70.333333333333343" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="tintColor" red="0.3332071346147864" green="0.77579818212136109" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Login"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="CwY-kQ-Dfy" secondAttribute="bottom" id="41s-qh-CbT"/>
                                     <constraint firstItem="CwY-kQ-Dfy" firstAttribute="width" secondItem="Xq3-QY-LZI" secondAttribute="width" id="AmQ-ca-MMV"/>
-                                    <constraint firstItem="8qq-Oe-vnU" firstAttribute="trailing" secondItem="cp4-UO-eaw" secondAttribute="trailing" constant="72" id="QI3-td-1Ek"/>
+                                    <constraint firstItem="eLs-or-bCM" firstAttribute="leading" secondItem="8qq-Oe-vnU" secondAttribute="leading" constant="24" id="OyN-2m-6SB"/>
                                     <constraint firstItem="CwY-kQ-Dfy" firstAttribute="leading" secondItem="Xq3-QY-LZI" secondAttribute="leading" id="Qi4-E7-VXm"/>
-                                    <constraint firstItem="cp4-UO-eaw" firstAttribute="leading" secondItem="8qq-Oe-vnU" secondAttribute="leading" constant="72" id="oPJ-S7-2Z8"/>
-                                    <constraint firstItem="cp4-UO-eaw" firstAttribute="top" secondItem="CwY-kQ-Dfy" secondAttribute="bottom" constant="44" id="oef-7A-Sc4"/>
+                                    <constraint firstItem="8qq-Oe-vnU" firstAttribute="trailing" secondItem="eLs-or-bCM" secondAttribute="trailing" constant="24" id="q5N-VV-8XQ"/>
                                     <constraint firstAttribute="trailing" secondItem="CwY-kQ-Dfy" secondAttribute="trailing" id="ssh-1r-aoZ"/>
                                     <constraint firstItem="CwY-kQ-Dfy" firstAttribute="top" secondItem="Xq3-QY-LZI" secondAttribute="top" id="w8V-oR-yZB"/>
+                                    <constraint firstItem="eLs-or-bCM" firstAttribute="top" secondItem="CwY-kQ-Dfy" secondAttribute="bottom" constant="44" id="yVl-dg-Qab"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="dKr-eB-uhQ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8qq-Oe-vnU"/>
@@ -134,6 +153,13 @@
                             <constraint firstAttribute="trailing" secondItem="1ZP-eb-d7Z" secondAttribute="trailing" id="pxd-dF-Jkk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="qvR-36-EwF" id="YWN-AE-NFO"/>
+                        <outlet property="passwordTextField" destination="XGK-L3-UnD" id="I9n-7S-FMi"/>
+                        <outlet property="signUpbutton" destination="cp4-UO-eaw" id="q98-fh-WhJ"/>
+                        <outlet property="userNameLabel" destination="br9-GT-Cyn" id="UT5-kt-PMq"/>
+                        <outlet property="userNameTextField" destination="old-gJ-6Cy" id="L04-hv-73M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKf-Ek-k7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -244,10 +270,17 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5w-Rz-sBV">
-                                        <rect key="frame" x="100" y="421.33333333333337" width="193" height="34.333333333333314"/>
+                                        <rect key="frame" x="100" y="421.33333333333337" width="193" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8sK-ez-7Kv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Back to Login screen"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Sign In">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="backToLoginClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="dZj-Px-qzp"/>
                                         </connections>
@@ -316,10 +349,10 @@
     </scenes>
     <resources>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
