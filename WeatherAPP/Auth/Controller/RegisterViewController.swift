@@ -21,7 +21,8 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func backToLoginClicked(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+    registerAlert()
+
     }
     
     
@@ -32,9 +33,27 @@ class RegisterViewController: UIViewController {
         passwordTextField.delegate = self
         emailTextField.delegate = self
         surnameNameTextField.delegate = self
+    }
+    
+    
+    func registerAlert() {
+        let alertController = UIAlertController(
+            title: "",
+            message: "You have registered",
+            preferredStyle: .alert)
         
+        alertController.addAction(
+            UIAlertAction(title: "Close",
+                          style:UIAlertAction.Style.default,
+                          handler: {ac in
+                              self.navigationController?.popViewController(animated: true)
+                          }))
+        present(alertController , animated: true, completion: nil)
         
     }
+    
+    
+    
     
 }
 
