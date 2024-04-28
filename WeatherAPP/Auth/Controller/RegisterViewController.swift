@@ -17,10 +17,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet private weak var surnameNameTextField: UITextField!
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var emailTextField: UITextField!
-
+    @IBOutlet private weak var backToLoginButton: UIButton!
     
     
-    
+    @IBAction func backToLoginClicked(_ sender: Any) {
+    }
     
     
     override func viewDidLoad() {
