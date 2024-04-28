@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordLabel: UILabel!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var signUpbutton: UIButton!
-    @IBOutlet private weak var signInbutton: UIButton!
+    @IBOutlet private weak var loginbutton: UIButton!
     
     @IBAction func signUp(_ sender: Any) {
         let vc = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController
@@ -28,13 +28,26 @@ class LoginViewController: UIViewController {
         isemptyCheck()
         
     }
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
      
     }
+    
+    fileprivate func configureView(){
+        signUpbutton.layer.borderColor = UIColor.systemIndigo.cgColor
+        signUpbutton.layer.borderWidth = 1.0
+        loginbutton.layer.cornerRadius = 12
+        signUpbutton.layer.cornerRadius = 12
+        userNameTextField.layer.borderWidth = 1.0
+        userNameTextField.layer.borderColor = UIColor.systemIndigo.cgColor
+        userNameTextField.layer.cornerRadius = 8
+        passwordTextField.layer.borderWidth = 1.0
+        passwordTextField.layer.borderColor = UIColor.systemIndigo.cgColor
+        passwordTextField.layer.cornerRadius = 8
+    }
+    
+    
     fileprivate func isemptyCheck(){
         
         if userNameTextField.text?.isEmpty ?? false || passwordTextField.text?.isEmpty ?? false {

@@ -159,9 +159,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginbutton" destination="Rcv-TQ-Hdl" id="8Mt-mp-9hh"/>
                         <outlet property="passwordLabel" destination="qvR-36-EwF" id="YWN-AE-NFO"/>
                         <outlet property="passwordTextField" destination="XGK-L3-UnD" id="I9n-7S-FMi"/>
-                        <outlet property="signInbutton" destination="Rcv-TQ-Hdl" id="roE-Of-ncf"/>
                         <outlet property="signUpbutton" destination="cp4-UO-eaw" id="q98-fh-WhJ"/>
                         <outlet property="userNameLabel" destination="br9-GT-Cyn" id="UT5-kt-PMq"/>
                         <outlet property="userNameTextField" destination="old-gJ-6Cy" id="L04-hv-73M"/>
