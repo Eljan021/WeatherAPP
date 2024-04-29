@@ -31,12 +31,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureView()
     }
     
     fileprivate func configureView(){
-        signUpbutton.layer.borderColor = UIColor.systemIndigo.cgColor
-        signUpbutton.layer.borderWidth = 1.0
         loginbutton.layer.cornerRadius = 12
         signUpbutton.layer.cornerRadius = 12
         userNameTextField.layer.borderWidth = 1.0
