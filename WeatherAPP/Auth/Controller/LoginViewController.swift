@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
         isemptyCheck()
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
     }
     
     fileprivate func configureView(){
@@ -61,13 +61,20 @@ class LoginViewController: UIViewController {
                     title: "Close",
                     style: .cancel))
             present(alertController,animated: true)
-       
+        }else{
+            let alertController = UIAlertController(
+                title: "Approved",
+                message: "Logged In",
+                preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(alertController, animated: true)
+            
         }
     }
-   
-    
-    
 }
+    
+    
+
 
 extension LoginViewController: UITextFieldDelegate {
     
