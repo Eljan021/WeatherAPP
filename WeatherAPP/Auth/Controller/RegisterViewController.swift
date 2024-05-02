@@ -37,6 +37,7 @@ class RegisterViewController: UIViewController {
         passwordTextField.delegate = self
         emailTextField.delegate = self
         surnameNameTextField.delegate = self
+        configureView()
     }
     fileprivate func configureView(){
         signInbutton.layer.borderColor = UIColor.systemIndigo.cgColor
