@@ -288,31 +288,31 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5w-Rz-sBV">
-                                        <rect key="frame" x="100" y="421.33333333333331" width="230" height="40"/>
+                                        <rect key="frame" x="24" y="475.66666666666669" width="382" height="48.000000000000057"/>
+                                        <color key="backgroundColor" name="button_bgcolor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="8sK-ez-7Kv"/>
+                                            <constraint firstAttribute="height" constant="48" id="5E6-Vq-ORX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Sign In"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Sign In">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                        </buttonConfiguration>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="backToLoginClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="dZj-Px-qzp"/>
+                                            <action selector="signInClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="w7q-bg-89Z"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="cct-LO-auh" firstAttribute="bottom" secondItem="Z5w-Rz-sBV" secondAttribute="bottom" constant="24" id="2Id-LE-jX0"/>
                                     <constraint firstAttribute="bottom" secondItem="b66-bz-c4E" secondAttribute="bottom" id="A5B-AV-9hs"/>
                                     <constraint firstItem="b66-bz-c4E" firstAttribute="leading" secondItem="FHu-Tl-US5" secondAttribute="leading" id="Bow-PI-WJe"/>
+                                    <constraint firstItem="Z5w-Rz-sBV" firstAttribute="leading" secondItem="cct-LO-auh" secondAttribute="leading" constant="24" id="DjP-Wc-vET"/>
                                     <constraint firstAttribute="trailing" secondItem="b66-bz-c4E" secondAttribute="trailing" id="Fsk-YD-F3o"/>
-                                    <constraint firstItem="Z5w-Rz-sBV" firstAttribute="top" secondItem="b66-bz-c4E" secondAttribute="bottom" constant="72" id="KSZ-YE-p6B"/>
                                     <constraint firstItem="b66-bz-c4E" firstAttribute="top" secondItem="FHu-Tl-US5" secondAttribute="top" id="Q1S-TW-OTo"/>
-                                    <constraint firstItem="Z5w-Rz-sBV" firstAttribute="leading" secondItem="cct-LO-auh" secondAttribute="leading" constant="100" id="SoQ-rJ-J7l"/>
+                                    <constraint firstItem="cct-LO-auh" firstAttribute="trailing" secondItem="Z5w-Rz-sBV" secondAttribute="trailing" constant="24" id="Scs-59-tEu"/>
                                     <constraint firstItem="b66-bz-c4E" firstAttribute="width" secondItem="FHu-Tl-US5" secondAttribute="width" id="ecf-CE-KNj"/>
-                                    <constraint firstItem="cct-LO-auh" firstAttribute="trailing" secondItem="Z5w-Rz-sBV" secondAttribute="trailing" constant="100" id="pxO-sy-uic"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="WLh-hT-AZT"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="cct-LO-auh"/>
@@ -372,12 +372,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backToLoginButton" destination="Z5w-Rz-sBV" id="co8-4U-fQR"/>
                         <outlet property="backbutton" destination="6sA-wX-f0e" id="Bcf-4H-eZJ"/>
                         <outlet property="emailLabel" destination="7Qu-M7-y3j" id="ECB-6q-Abi"/>
                         <outlet property="emailTextField" destination="bRu-3a-os0" id="voQ-iF-uKG"/>
                         <outlet property="passwordLabel" destination="pUQ-4c-agK" id="COc-UD-bBe"/>
                         <outlet property="passwordTextField" destination="sQo-gp-did" id="Ymv-al-pzf"/>
+                        <outlet property="signInbutton" destination="Z5w-Rz-sBV" id="pLt-eV-43M"/>
                         <outlet property="surnameNameLabel" destination="Wu3-tp-TC8" id="Xq3-Cx-378"/>
                         <outlet property="surnameNameTextField" destination="FXc-9z-Zkw" id="XLE-JT-jbQ"/>
                         <outlet property="userNameLabel" destination="Kad-Tn-ar0" id="OTf-yV-AxV"/>
@@ -15978,9 +15978,6 @@ QXsADkGDAA5BhgAOQYsADkGTAAAAAAAABAEAAAAAAAAAVgAAAAAAAAAAAAAAAAAOQZY
         </namedColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
