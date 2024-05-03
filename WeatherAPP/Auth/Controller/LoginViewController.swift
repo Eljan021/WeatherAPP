@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var userNameLabel: UILabel!
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var passwordLabel: UILabel!

@@ -9,6 +9,7 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var userNameLabel: UILabel!
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var passwordLabel: UILabel!
@@ -39,6 +40,36 @@ class RegisterViewController: UIViewController {
         surnameNameTextField.delegate = self
         configureView()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    
+    @objc func keyboardWillShow(notification:NSNotification){
+        
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height + 80
+        self.scrollView.contentInset = contentInset
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification){
+        
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = contentInset
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     fileprivate func configureView(){
         signInbutton.layer.borderColor = UIColor.systemIndigo.cgColor
         signInbutton.layer.borderWidth = 1.0
@@ -117,6 +148,10 @@ extension RegisterViewController: UITextFieldDelegate {
         default:
             break
         }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return false
     }
 }
 

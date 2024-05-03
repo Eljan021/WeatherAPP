@@ -387,6 +387,7 @@
                         <outlet property="emailTextField" destination="bRu-3a-os0" id="voQ-iF-uKG"/>
                         <outlet property="passwordLabel" destination="pUQ-4c-agK" id="COc-UD-bBe"/>
                         <outlet property="passwordTextField" destination="sQo-gp-did" id="Ymv-al-pzf"/>
+                        <outlet property="scrollView" destination="FHu-Tl-US5" id="748-xQ-lNm"/>
                         <outlet property="signInbutton" destination="Z5w-Rz-sBV" id="pLt-eV-43M"/>
                         <outlet property="surnameNameLabel" destination="Wu3-tp-TC8" id="Xq3-Cx-378"/>
                         <outlet property="surnameNameTextField" destination="FXc-9z-Zkw" id="XLE-JT-jbQ"/>
