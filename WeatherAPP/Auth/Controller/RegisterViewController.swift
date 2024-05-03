@@ -87,7 +87,7 @@ class RegisterViewController: UIViewController {
     fileprivate func isemptyCheck(){
         
         if userNameTextField.text?.isEmpty ?? false || passwordTextField.text?.isEmpty ?? false
-            || surnameNameTextField.text?.isEmpty ?? false || emailTextField.text?.isEmpty ?? false {
+        || surnameNameTextField.text?.isEmpty ?? false || emailTextField.text?.isEmpty ?? false {
             let alertController = UIAlertController(
                 title: "Error",
                 message: "Account could not be created",
