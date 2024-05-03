@@ -332,12 +332,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uoa-VN-lPr">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-4F-6VX">
-                                        <rect key="frame" x="176" y="51.000000000000007" width="78.333333333333314" height="26.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sA-wX-f0e">
                                         <rect key="frame" x="8" y="48" width="72" height="72"/>
                                         <constraints>
@@ -351,14 +345,20 @@
                                             <action selector="backClicked:" destination="lW2-U7-MYG" eventType="touchUpInside" id="hHe-ys-wfL"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-4F-6VX">
+                                        <rect key="frame" x="176" y="71" width="78.333333333333314" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.19856052639999999" green="0.13385266809999999" blue="0.37645565920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="BUt-dc-qQD"/>
-                                    <constraint firstItem="eeM-4F-6VX" firstAttribute="centerX" secondItem="Uoa-VN-lPr" secondAttribute="centerX" id="Fh4-GU-xu0"/>
-                                    <constraint firstItem="eeM-4F-6VX" firstAttribute="centerY" secondItem="Uoa-VN-lPr" secondAttribute="centerY" id="PfB-7l-7sr"/>
                                     <constraint firstAttribute="bottom" secondItem="6sA-wX-f0e" secondAttribute="bottom" constant="8" id="UX3-vt-HIG"/>
+                                    <constraint firstItem="eeM-4F-6VX" firstAttribute="centerX" secondItem="Uoa-VN-lPr" secondAttribute="centerX" id="dGC-7R-9tT"/>
                                     <constraint firstItem="6sA-wX-f0e" firstAttribute="leading" secondItem="Uoa-VN-lPr" secondAttribute="leading" constant="8" id="uMz-nx-RpS"/>
+                                    <constraint firstItem="eeM-4F-6VX" firstAttribute="centerY" secondItem="Uoa-VN-lPr" secondAttribute="centerY" constant="20" id="xCU-yp-xvB"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3845731" translatesAutoresizingMaskIntoConstraints="NO" id="51G-fv-ao3">
