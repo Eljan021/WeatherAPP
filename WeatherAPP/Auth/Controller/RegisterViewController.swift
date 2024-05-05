@@ -27,9 +27,8 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func signInClicked(_ sender: Any) {
-        createData()
         isemptyCheck()
-        
+    
     }
     
     
@@ -90,13 +89,14 @@ class RegisterViewController: UIViewController {
         user.password = passwordTextField.text ?? ""
         user.username = userNameTextField.text ?? ""
         user.surname = surnameNameTextField.text ?? ""
+        user.userId = UUID().uuidString
         
         let realm = try! Realm()
         try! realm.write {
             realm.add(user)
         }
         
-        print("created")
+        showSuccessAlert()
         
     }
     
@@ -116,19 +116,21 @@ class RegisterViewController: UIViewController {
                     title: "Close",
                     style: .cancel))
             present(alertController,animated: true)
-        }else{
-            let alertController = UIAlertController(
-                title: "",
-                message: "Account created",
-                preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {ac in
-                self.navigationController?.popViewController(animated: true)}))
-            present(alertController, animated: true, completion: nil)
+        }else {
+            createData()
         }
     }
     
     
-    
+    fileprivate func showSuccessAlert() {
+        let alertController = UIAlertController(
+            title: "",
+            message: "Account created",
+            preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {ac in
+            self.navigationController?.popViewController(animated: true)}))
+        present(alertController, animated: true, completion: nil)
+    }
     
 }
 
