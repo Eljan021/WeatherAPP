@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegisterViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func signInClicked(_ sender: Any) {
+        createData()
         isemptyCheck()
         
     }
@@ -82,6 +84,22 @@ class RegisterViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 8
         
     }
+    fileprivate func createData(){
+        let user = User()
+        user.email = emailTextField.text ?? ""
+        user.password = passwordTextField.text ?? ""
+        user.username = userNameTextField.text ?? ""
+        user.surname = surnameNameTextField.text ?? ""
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(user)
+        }
+        
+        print("created")
+        
+    }
+    
     
     
     fileprivate func isemptyCheck(){
