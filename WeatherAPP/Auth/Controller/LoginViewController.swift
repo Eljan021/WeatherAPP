@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginclicked(_ sender: Any) {
-//        userCheck()
+        //        userCheck()
         checkUser()
         
     }
@@ -98,80 +98,33 @@ class LoginViewController: UIViewController {
         guard let user = users.first(where: {$0.username == inputEmail}) else {
             print("notfound")
             let alert = UIAlertController(title: "User not found", message: "Pleace re-enter info or register", preferredStyle: UIAlertController.Style.alert)
-                            alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.cancel, handler: nil))
             alert.addAction(UIAlertAction(title: "Go to register", style:UIAlertAction.Style.default , handler: { ac in
                 let vc = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateViewController(withIdentifier:"RegisterViewController") as? RegisterViewController
                 self.navigationController?.pushViewController(vc!, animated: true)
             }))
-                            self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if user.password == inputPassword {
             print("access granted")
             let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
-                                navigationController?.pushViewController(vc!, animated: true)
+            navigationController?.pushViewController(vc!, animated: true)
         } else {
             print("access denied")
             let alert = UIAlertController(title: "Password error",
                                           message: "Pleace check password",
                                           preferredStyle: UIAlertController.Style.alert)
-                                alert.addAction(UIAlertAction(title: "Click",
-                                                              style: UIAlertAction.Style.cancel,
-                                                              handler: nil))
+            alert.addAction(UIAlertAction(title: "Click",
+                                          style: UIAlertAction.Style.cancel,
+                                          handler: nil))
             
-                                self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
         }
         UserDefaultsHelper.setBool(key: Constant.UD_IS_LOGIN_KEY, value: true)
     }
 }
-    
-    
-    
-//    
-//    fileprivate func userCheck(){
-//        let realm = try! Realm()
-//        
-//        let inputUsername = userNameTextField.text ?? ""
-//        let inputPassword = passwordTextField.text ?? ""
-//        
-//        let users = realm.objects(User.self)
-//        
-//        guard let user = users.first(where: {$0.username == inputUsername}) else {
-//            print("notfound")
-//            if userNameTextField.text?.isEmpty ?? false{
-//                let alertController = UIAlertController(
-//                    title: "Error",
-//                    message: "Check Username",
-//                    preferredStyle: .alert)
-//                alertController.addAction(
-//                    UIAlertAction(
-//                        title: "Close",
-//                        style: .cancel))
-//                present(alertController,animated: true)
-//            } else {
-//                if passwordTextField.text?.isEmpty ?? false{
-//                    let alertController = UIAlertController(
-//                        title: "Error", message: "Check Password",
-//                        preferredStyle: .alert)
-//                    alertController.addAction(UIAlertAction(title: "Close", style: .cancel))
-//                    present(alertController, animated: true)
-//                }else{
-//                        
-//                    let alertController = UIAlertController(
-//                        title: "Approved",
-//                        message: "Logged In",
-//                        preferredStyle: .alert)
-//                    alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-//                    present(alertController, animated: true)
-//                    
-//                }
-//                
-//            }
-//            return   }
-//    }
-//}
-
 
 extension LoginViewController: UITextFieldDelegate {
     
@@ -189,9 +142,7 @@ extension LoginViewController: UITextFieldDelegate {
             if (userNameTextField.text?.count ?? 0) > 4 {userNameTextField.layer.borderWidth = 0} else {
                 userNameTextField.layer.borderWidth = 1
                 userNameTextField.layer.borderColor = UIColor.red.cgColor
-                
             }
-            
         default:
             break
         }
