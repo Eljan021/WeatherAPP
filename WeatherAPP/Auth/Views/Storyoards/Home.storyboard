@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Now-->
         <scene sceneID="A0U-yg-vpL">
             <objects>
                 <viewController id="Jad-1Z-NZM" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="Hh9-KU-tK6"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="lt5-jM-edd"/>
+                    <tabBarItem key="tabBarItem" title="Now" image="location" selectedImage="location" catalog="system" id="lt5-jM-edd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDN-Ix-ds3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1718" y="58"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="oYX-ye-2zU">
             <objects>
                 <viewController id="hNP-Ck-YKp" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="pWY-Xj-UJr"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="f79-YF-7PO"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="f79-YF-7PO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYh-VO-NLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +60,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="location" width="128" height="128"/>
+        <image name="location" catalog="system" width="128" height="119"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
