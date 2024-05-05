@@ -122,6 +122,7 @@ class LoginViewController: UIViewController {
             
                                 self.present(alert, animated: true, completion: nil)
         }
+        UserDefaultsHelper.setBool(key: Constant.UD_IS_LOGIN_KEY, value: true)
     }
 }
     

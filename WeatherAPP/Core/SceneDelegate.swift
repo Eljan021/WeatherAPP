@@ -29,6 +29,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController(rootViewController: vc)
 //            navigationController.popToRootViewController(animated: true)
         newWindow.rootViewController = navigationController
+        if UserDefaultsHelper.getBool(key: Constant.UD_IS_LOGIN_KEY) {
+                    let vc = UIStoryboard.init(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController ?? TabBarController()
+                    // Set the new root view controller
+                    let navigationController = UINavigationController(rootViewController: vc)
+        //            navigationController.popToRootViewController(animated: true)
+                    newWindow.rootViewController = navigationController
+                } else {
+                    let vc = UIStoryboard.init(name: "Login", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController ?? LoginViewController()
+                    let navigationController = UINavigationController(rootViewController: vc)
+                    // Set the new root view controller
+                    newWindow.rootViewController = navigationController
+                }
         
         
         window = newWindow
