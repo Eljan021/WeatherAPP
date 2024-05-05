@@ -26,6 +26,7 @@
 		924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7992BD964580097AADC /* RegisterViewController.swift */; };
 		927A92842BE7813700A7086A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92832BE7813700A7086A /* User.swift */; };
 		927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A92852BE7EDAE00A7086A /* Home.storyboard */; };
+		927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92892BE7F44A00A7086A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		924DA7992BD964580097AADC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		927A92832BE7813700A7086A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		927A92852BE7EDAE00A7086A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		927A92892BE7F44A00A7086A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			children = (
 				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
 				924DA7992BD964580097AADC /* RegisterViewController.swift */,
+				927A92892BE7F44A00A7086A /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */,
+				927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */,
 				924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */,
 				924DA78A2BD962980097AADC /* Extensions.swift in Sources */,
 				924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */,

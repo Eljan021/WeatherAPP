@@ -109,8 +109,8 @@ class LoginViewController: UIViewController {
         
         if user.password == inputPassword {
             print("access granted")
-//            let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabbarViewController") as? TabbarViewController
-//                                navigationController?.pushViewController(vc!, animated: true)
+            let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
+                                navigationController?.pushViewController(vc!, animated: true)
         } else {
             print("access denied")
             let alert = UIAlertController(title: "Password error",
