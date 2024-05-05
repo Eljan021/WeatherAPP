@@ -24,6 +24,7 @@
 		924DA7912BD962A80097AADC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7902BD962A80097AADC /* SDWebImage */; };
 		924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7922BD962A80097AADC /* SDWebImageMapKit */; };
 		924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7992BD964580097AADC /* RegisterViewController.swift */; };
+		927A92842BE7813700A7086A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92832BE7813700A7086A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,7 @@
 		924DA7872BD962980097AADC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		924DA7882BD962980097AADC /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		924DA7992BD964580097AADC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		927A92832BE7813700A7086A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		924DA7942BD9637A0097AADC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				927A92822BE7812500A7086A /* Model */,
 				924DA79B2BDC6BE00097AADC /* Views */,
 				924DA7972BD963A10097AADC /* Controller */,
 				924DA7962BD963970097AADC /* ViewModel */,
@@ -186,6 +189,14 @@
 		924DA7A62BDE448B0097AADC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		927A92822BE7812500A7086A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				927A92832BE7813700A7086A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 				924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */,
 				924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */,
 				4031B51D2BE77BB2005CE4B7 /* RealmHelper.swift in Sources */,
+				927A92842BE7813700A7086A /* User.swift in Sources */,
 				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
 				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
