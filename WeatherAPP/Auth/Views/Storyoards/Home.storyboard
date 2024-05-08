@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="Hh9-KU-tK6"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Now" image="location" selectedImage="location" catalog="system" id="lt5-jM-edd"/>
+                    <tabBarItem key="tabBarItem" title="Now" image="location" catalog="system" selectedImage="location" id="lt5-jM-edd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDN-Ix-ds3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +47,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i7d-Xo-cSi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="hNP-Ck-YKp" kind="relationship" relationship="viewControllers" id="cFa-ge-2LJ"/>
@@ -61,7 +61,6 @@
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
-        <image name="location" width="128" height="128"/>
         <image name="location" catalog="system" width="128" height="119"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
