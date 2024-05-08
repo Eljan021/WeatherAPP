@@ -28,6 +28,7 @@
 		927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A92852BE7EDAE00A7086A /* Home.storyboard */; };
 		927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92892BE7F44A00A7086A /* TabBarController.swift */; };
 		927A928C2BE7FA8500A7086A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928B2BE7FA8500A7086A /* Constant.swift */; };
+		927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928D2BEBBD3800A7086A /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 		927A92852BE7EDAE00A7086A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		927A92892BE7F44A00A7086A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		927A928B2BE7FA8500A7086A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		927A928D2BEBBD3800A7086A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
 				924DA7992BD964580097AADC /* RegisterViewController.swift */,
 				927A92892BE7F44A00A7086A /* TabBarController.swift */,
+				927A928D2BEBBD3800A7086A /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
 				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
+				927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
