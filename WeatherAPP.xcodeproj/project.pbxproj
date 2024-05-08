@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4031B51B2BE77B5F005CE4B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4031B51A2BE77B5F005CE4B7 /* RealmSwift */; };
+		4031B51D2BE77BB2005CE4B7 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031B51C2BE77BB2005CE4B7 /* RealmHelper.swift */; };
 		924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75B2BD940D00097AADC /* AppDelegate.swift */; };
 		924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75D2BD940D00097AADC /* SceneDelegate.swift */; };
 		924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA75F2BD940D00097AADC /* LoginViewController.swift */; };
@@ -22,9 +24,28 @@
 		924DA7912BD962A80097AADC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7902BD962A80097AADC /* SDWebImage */; };
 		924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7922BD962A80097AADC /* SDWebImageMapKit */; };
 		924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7992BD964580097AADC /* RegisterViewController.swift */; };
+		927A92842BE7813700A7086A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92832BE7813700A7086A /* User.swift */; };
+		927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A92852BE7EDAE00A7086A /* Home.storyboard */; };
+		927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92892BE7F44A00A7086A /* TabBarController.swift */; };
+		927A928C2BE7FA8500A7086A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928B2BE7FA8500A7086A /* Constant.swift */; };
+		927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928D2BEBBD3800A7086A /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4031B5162BE77B1A005CE4B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4031B51C2BE77BB2005CE4B7 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		924DA7582BD940D00097AADC /* WeatherAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924DA75B2BD940D00097AADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924DA75D2BD940D00097AADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +61,11 @@
 		924DA7872BD962980097AADC /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		924DA7882BD962980097AADC /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		924DA7992BD964580097AADC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		927A92832BE7813700A7086A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		927A92852BE7EDAE00A7086A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		927A92892BE7F44A00A7086A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		927A928B2BE7FA8500A7086A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		927A928D2BEBBD3800A7086A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4031B51B2BE77B5F005CE4B7 /* RealmSwift in Frameworks */,
 				924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */,
 				924DA7912BD962A80097AADC /* SDWebImage in Frameworks */,
 			);
@@ -93,6 +120,8 @@
 				924DA7852BD962980097AADC /* NetworkHelper.swift */,
 				924DA7872BD962980097AADC /* NetworkManager.swift */,
 				924DA7882BD962980097AADC /* UserDefaultsHelper.swift */,
+				4031B51C2BE77BB2005CE4B7 /* RealmHelper.swift */,
+				927A928B2BE7FA8500A7086A /* Constant.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -100,6 +129,7 @@
 		924DA7942BD9637A0097AADC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				927A92822BE7812500A7086A /* Model */,
 				924DA79B2BDC6BE00097AADC /* Views */,
 				924DA7972BD963A10097AADC /* Controller */,
 				924DA7962BD963970097AADC /* ViewModel */,
@@ -128,6 +158,8 @@
 			children = (
 				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
 				924DA7992BD964580097AADC /* RegisterViewController.swift */,
+				927A92892BE7F44A00A7086A /* TabBarController.swift */,
+				927A928D2BEBBD3800A7086A /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				924DA7612BD940D00097AADC /* Login.storyboard */,
+				927A92852BE7EDAE00A7086A /* Home.storyboard */,
 			);
 			path = Storyoards;
 			sourceTree = "<group>";
@@ -172,6 +205,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		927A92822BE7812500A7086A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				927A92832BE7813700A7086A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +223,7 @@
 				924DA7542BD940D00097AADC /* Sources */,
 				924DA7552BD940D00097AADC /* Frameworks */,
 				924DA7562BD940D00097AADC /* Resources */,
+				4031B5162BE77B1A005CE4B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +233,7 @@
 			packageProductDependencies = (
 				924DA7902BD962A80097AADC /* SDWebImage */,
 				924DA7922BD962A80097AADC /* SDWebImageMapKit */,
+				4031B51A2BE77B5F005CE4B7 /* RealmSwift */,
 			);
 			productName = WeatherAPP;
 			productReference = 924DA7582BD940D00097AADC /* WeatherAPP.app */;
@@ -222,6 +265,7 @@
 			mainGroup = 924DA74F2BD940D00097AADC;
 			packageReferences = (
 				924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				4031B5192BE77B5F005CE4B7 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 924DA7592BD940D00097AADC /* Products */;
 			projectDirPath = "";
@@ -240,6 +284,7 @@
 				924DA7652BD940D20097AADC /* Assets.xcassets in Resources */,
 				924DA7682BD940D20097AADC /* Base in Resources */,
 				924DA7632BD940D00097AADC /* Base in Resources */,
+				927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,15 +296,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */,
+				927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */,
 				924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */,
 				924DA78A2BD962980097AADC /* Extensions.swift in Sources */,
 				924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */,
 				924DA7892BD962980097AADC /* Layout_Extension.swift in Sources */,
 				924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */,
+				927A928C2BE7FA8500A7086A /* Constant.swift in Sources */,
 				924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */,
+				4031B51D2BE77BB2005CE4B7 /* RealmHelper.swift in Sources */,
+				927A92842BE7813700A7086A /* User.swift in Sources */,
 				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
 				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
+				927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8Y35H4W;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -426,6 +476,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atl.WeatherAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,7 +492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8Y35H4W;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -454,6 +507,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atl.WeatherAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,6 +540,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4031B5192BE77B5F005CE4B7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -495,6 +559,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4031B51A2BE77B5F005CE4B7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4031B5192BE77B5F005CE4B7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		924DA7902BD962A80097AADC /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegisterViewController: UIViewController {
     
@@ -49,7 +50,7 @@ class RegisterViewController: UIViewController {
     
     @objc func keyboardWillShow(notification:NSNotification){
         
-        var userInfo = notification.userInfo!
+        let userInfo = notification.userInfo!
         var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.view.convert(keyboardFrame, from: nil)
         
@@ -82,12 +83,29 @@ class RegisterViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 8
         
     }
+    fileprivate func createData(){
+        let user = User()
+        user.email = emailTextField.text ?? ""
+        user.password = passwordTextField.text ?? ""
+        user.username = userNameTextField.text ?? ""
+        user.surname = surnameNameTextField.text ?? ""
+        user.userId = UUID().uuidString
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(user)
+        }
+        
+        showSuccessAlert()
+        
+    }
+    
     
     
     fileprivate func isemptyCheck(){
         
         if userNameTextField.text?.isEmpty ?? false || passwordTextField.text?.isEmpty ?? false
-        || surnameNameTextField.text?.isEmpty ?? false || emailTextField.text?.isEmpty ?? false {
+            || surnameNameTextField.text?.isEmpty ?? false || emailTextField.text?.isEmpty ?? false {
             let alertController = UIAlertController(
                 title: "Error",
                 message: "Account could not be created",
@@ -98,19 +116,21 @@ class RegisterViewController: UIViewController {
                     title: "Close",
                     style: .cancel))
             present(alertController,animated: true)
-        }else{
-            let alertController = UIAlertController(
-                title: "",
-                message: "Account created",
-                preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {ac in
-                self.navigationController?.popViewController(animated: true)}))
-            present(alertController, animated: true, completion: nil)
+        }else {
+            createData()
         }
     }
     
     
-    
+    fileprivate func showSuccessAlert() {
+        let alertController = UIAlertController(
+            title: "",
+            message: "Account created",
+            preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {ac in
+            self.navigationController?.popViewController(animated: true)}))
+        present(alertController, animated: true, completion: nil)
+    }
     
 }
 
