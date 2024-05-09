@@ -42,7 +42,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
             return CGSize(width:collectionView.frame.width, height: collectionView.frame.height * 0.5)
         }
             else {
-                return CGSize(width:collectionView.frame.width, height: 300 )
+                return CGSize(width:collectionView.frame.width, height: 380 )
             }
         }
     }

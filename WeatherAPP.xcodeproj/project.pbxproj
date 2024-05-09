@@ -209,10 +209,10 @@
 		924DA79E2BDC6C480097AADC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				927A92B02BED6C8900A7086A /* CustomCell */,
-				927A92AB2BED60C400A7086A /* Footer */,
 				927A929D2BED259C00A7086A /* HeaderCell */,
 				927A92952BED255100A7086A /* HomeCell */,
+				927A92B02BED6C8900A7086A /* CustomCell */,
+				927A92AB2BED60C400A7086A /* Footer */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
