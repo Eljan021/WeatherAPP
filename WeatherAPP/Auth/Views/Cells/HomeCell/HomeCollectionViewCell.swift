@@ -29,7 +29,6 @@ extension HomeCollectionViewCell: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
-//        cell.favoriteButtonClicked = favoriteButtonClicked
         return cell
     }
     
