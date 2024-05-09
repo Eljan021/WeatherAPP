@@ -47,7 +47,7 @@
     </objects>
     <resources>
         <namedColor name="custom_cell">
-            <color red="0.2588235438" green="0.46666666870000001" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.25882352941176473" green="0.46666666666666667" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

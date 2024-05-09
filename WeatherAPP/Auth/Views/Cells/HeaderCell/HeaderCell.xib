@@ -21,21 +21,32 @@
                         <rect key="frame" x="16" y="4" width="252" height="176"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-Xw-Qxd">
-                                <rect key="frame" x="8" y="8" width="52" height="52"/>
+                                <rect key="frame" x="24" y="24" width="28" height="28"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="2Aq-ba-aqx"/>
-                                    <constraint firstAttribute="width" constant="52" id="xc8-Eo-uWy"/>
+                                    <constraint firstAttribute="height" constant="28" id="2Aq-ba-aqx"/>
+                                    <constraint firstAttribute="width" constant="28" id="xc8-Eo-uWy"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="akar-icons_plus">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-QY-Dt1">
+                                <rect key="frame" x="200" y="24" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="0rv-B4-I3Y"/>
+                                    <constraint firstAttribute="width" constant="28" id="gE3-rq-x3R"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="carbon_overflow-menu-vertical"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="custom_cell"/>
                         <constraints>
-                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="leading" secondItem="gJ2-gf-yOc" secondAttribute="leading" constant="8" id="6pe-Tz-wc9"/>
-                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="top" secondItem="gJ2-gf-yOc" secondAttribute="top" constant="8" id="tcD-CG-0NC"/>
+                            <constraint firstAttribute="trailing" secondItem="ib1-QY-Dt1" secondAttribute="trailing" constant="24" id="5l6-2e-1JK"/>
+                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="leading" secondItem="gJ2-gf-yOc" secondAttribute="leading" constant="24" id="6pe-Tz-wc9"/>
+                            <constraint firstItem="ib1-QY-Dt1" firstAttribute="top" secondItem="gJ2-gf-yOc" secondAttribute="top" constant="24" id="QKV-uu-cGV"/>
+                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="top" secondItem="gJ2-gf-yOc" secondAttribute="top" constant="24" id="tcD-CG-0NC"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -55,9 +66,10 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="akar-icons_plus" width="56" height="56"/>
+        <image name="carbon_overflow-menu-vertical" width="56" height="56"/>
         <namedColor name="custom_cell">
-            <color red="0.2588235438" green="0.46666666870000001" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.25882352941176473" green="0.46666666666666667" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
