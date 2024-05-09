@@ -1,13 +1,13 @@
 //
-//  HomeCollectionViewCell.swift
+//  HeaderCell.swift
 //  WeatherAPP
 //
-//  Created by Eljan on 08.05.24.
+//  Created by Eljan on 09.05.24.
 //
 
 import UIKit
 
-class HomeCollectionViewCell: UICollectionViewCell {
+class HeaderCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

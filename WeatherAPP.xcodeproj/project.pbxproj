@@ -31,6 +31,8 @@
 		927A928E2BEBBD3800A7086A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928D2BEBBD3800A7086A /* HomeViewController.swift */; };
 		927A92932BEBD34D00A7086A /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */; };
 		927A92942BEBD34D00A7086A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */; };
+		927A92A02BED33D800A7086A /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A929F2BED33D800A7086A /* HeaderCell.xib */; };
+		927A92A12BED33D800A7086A /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A929E2BED33D800A7086A /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,8 @@
 		927A928D2BEBBD3800A7086A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		927A929E2BED33D800A7086A /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		927A929F2BED33D800A7086A /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +202,8 @@
 		924DA79E2BDC6C480097AADC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */,
-				927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */,
+				927A929D2BED259C00A7086A /* HeaderCell */,
+				927A92952BED255100A7086A /* HomeCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -217,6 +221,24 @@
 				927A92832BE7813700A7086A /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		927A92952BED255100A7086A /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */,
+				927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		927A929D2BED259C00A7086A /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				927A929E2BED33D800A7086A /* HeaderCell.swift */,
+				927A929F2BED33D800A7086A /* HeaderCell.xib */,
+			);
+			path = HeaderCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +313,7 @@
 				924DA7652BD940D20097AADC /* Assets.xcassets in Resources */,
 				924DA7682BD940D20097AADC /* Base in Resources */,
 				924DA7632BD940D00097AADC /* Base in Resources */,
+				927A92A02BED33D800A7086A /* HeaderCell.xib in Resources */,
 				927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +340,7 @@
 				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
 				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
+				927A92A12BED33D800A7086A /* HeaderCell.swift in Sources */,
 				927A928E2BEBBD3800A7086A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

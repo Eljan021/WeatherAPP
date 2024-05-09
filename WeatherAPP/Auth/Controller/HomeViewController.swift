@@ -26,14 +26,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
         return cell
     }
     
-
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 1
         
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 500, height: 700)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {  if indexPath.row == 0 {
+        return CGSize(width:collectionView.frame.width, height: collectionView.frame.height * 0.3)
     }
-    
+        else {
+            return CGSize(width:collectionView.frame.width, height: 84 )
+        }
+    }
 }
