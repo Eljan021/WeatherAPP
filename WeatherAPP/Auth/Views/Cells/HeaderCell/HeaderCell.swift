@@ -8,10 +8,10 @@
 import UIKit
 
 class HeaderCell: UICollectionViewCell {
-
+    @IBOutlet private weak var backroundView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backroundView.layer.cornerRadius = 20
     }
 
 }

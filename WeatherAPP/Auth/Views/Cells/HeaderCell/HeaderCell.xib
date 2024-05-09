@@ -11,30 +11,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCell" id="gTV-IL-0wX" customClass="HeaderCell" customModule="WeatherAPP" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="230" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="284" height="184"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="230" height="154"/>
+                <rect key="frame" x="0.0" y="0.0" width="284" height="184"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-gf-yOc">
-                        <rect key="frame" x="4" y="4" width="222" height="146"/>
+                        <rect key="frame" x="16" y="4" width="252" height="176"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-Xw-Qxd">
+                                <rect key="frame" x="8" y="8" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="2Aq-ba-aqx"/>
+                                    <constraint firstAttribute="width" constant="52" id="xc8-Eo-uWy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" name="custom_cell"/>
+                        <constraints>
+                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="leading" secondItem="gJ2-gf-yOc" secondAttribute="leading" constant="8" id="6pe-Tz-wc9"/>
+                            <constraint firstItem="lHc-Xw-Qxd" firstAttribute="top" secondItem="gJ2-gf-yOc" secondAttribute="top" constant="8" id="tcD-CG-0NC"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="gJ2-gf-yOc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="DJy-R7-aFF"/>
+                <constraint firstItem="gJ2-gf-yOc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="DJy-R7-aFF"/>
                 <constraint firstAttribute="bottom" secondItem="gJ2-gf-yOc" secondAttribute="bottom" constant="4" id="GLQ-AN-yTI"/>
-                <constraint firstAttribute="trailing" secondItem="gJ2-gf-yOc" secondAttribute="trailing" constant="4" id="Imu-Us-bav"/>
+                <constraint firstAttribute="trailing" secondItem="gJ2-gf-yOc" secondAttribute="trailing" constant="16" id="Imu-Us-bav"/>
                 <constraint firstItem="gJ2-gf-yOc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="TjB-oj-aYe"/>
             </constraints>
-            <size key="customSize" width="230" height="154"/>
-            <point key="canvasLocation" x="235.11450381679387" y="56.338028169014088"/>
+            <size key="customSize" width="284" height="184"/>
+            <connections>
+                <outlet property="backroundView" destination="gJ2-gf-yOc" id="0lN-DM-AVp"/>
+            </connections>
+            <point key="canvasLocation" x="276.3358778625954" y="66.901408450704224"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="custom_cell">
             <color red="0.2588235438" green="0.46666666870000001" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

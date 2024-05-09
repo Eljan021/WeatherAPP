@@ -164,8 +164,7 @@
 		924DA7972BD963A10097AADC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
-				924DA7992BD964580097AADC /* RegisterViewController.swift */,
+				927A92A22BED39BF00A7086A /* Login */,
 				927A92892BE7F44A00A7086A /* TabBarController.swift */,
 				927A928D2BEBBD3800A7086A /* HomeViewController.swift */,
 			);
@@ -239,6 +238,15 @@
 				927A929F2BED33D800A7086A /* HeaderCell.xib */,
 			);
 			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		927A92A22BED39BF00A7086A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
+				924DA7992BD964580097AADC /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
