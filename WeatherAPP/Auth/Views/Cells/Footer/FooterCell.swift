@@ -31,7 +31,7 @@ extension FooterCell: UICollectionViewDelegate, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 200, height: 120 )
+            return CGSize(width: 200, height: 44 )
         }
 
 }
