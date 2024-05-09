@@ -27,18 +27,44 @@
         <!--Home-->
         <scene sceneID="oYX-ye-2zU">
             <objects>
-                <viewController id="hNP-Ck-YKp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hNP-Ck-YKp" customClass="HomeViewController" customModule="WeatherAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ERU-Xj-fv5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4s-zf-qu1">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qIv-6G-CJO">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hNP-Ck-YKp" id="mA7-DV-Coi"/>
+                                    <outlet property="delegate" destination="hNP-Ck-YKp" id="G7i-eb-tOG"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pWY-Xj-UJr"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N4s-zf-qu1" firstAttribute="leading" secondItem="pWY-Xj-UJr" secondAttribute="leading" id="5ya-4a-Miz"/>
+                            <constraint firstItem="N4s-zf-qu1" firstAttribute="bottom" secondItem="pWY-Xj-UJr" secondAttribute="bottom" id="8pR-Pw-BbP"/>
+                            <constraint firstItem="N4s-zf-qu1" firstAttribute="top" secondItem="pWY-Xj-UJr" secondAttribute="top" id="K4q-Wh-MMf"/>
+                            <constraint firstItem="N4s-zf-qu1" firstAttribute="trailing" secondItem="pWY-Xj-UJr" secondAttribute="trailing" id="Zj1-b4-Cww"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="f79-YF-7PO"/>
+                    <connections>
+                        <outlet property="collection" destination="N4s-zf-qu1" id="glS-Xj-dau"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYh-VO-NLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="58"/>
+            <point key="canvasLocation" x="-263.35877862595419" y="57.74647887323944"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eiU-yN-hMO">
@@ -62,8 +88,8 @@
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="location" catalog="system" width="128" height="119"/>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

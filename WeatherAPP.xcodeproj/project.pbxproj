@@ -28,7 +28,9 @@
 		927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A92852BE7EDAE00A7086A /* Home.storyboard */; };
 		927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92892BE7F44A00A7086A /* TabBarController.swift */; };
 		927A928C2BE7FA8500A7086A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928B2BE7FA8500A7086A /* Constant.swift */; };
-		927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928D2BEBBD3800A7086A /* HomeController.swift */; };
+		927A928E2BEBBD3800A7086A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A928D2BEBBD3800A7086A /* HomeViewController.swift */; };
+		927A92932BEBD34D00A7086A /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */; };
+		927A92942BEBD34D00A7086A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,7 +67,9 @@
 		927A92852BE7EDAE00A7086A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		927A92892BE7F44A00A7086A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		927A928B2BE7FA8500A7086A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		927A928D2BEBBD3800A7086A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		927A928D2BEBBD3800A7086A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +163,7 @@
 				924DA75F2BD940D00097AADC /* LoginViewController.swift */,
 				924DA7992BD964580097AADC /* RegisterViewController.swift */,
 				927A92892BE7F44A00A7086A /* TabBarController.swift */,
-				927A928D2BEBBD3800A7086A /* HomeController.swift */,
+				927A928D2BEBBD3800A7086A /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +198,8 @@
 		924DA79E2BDC6C480097AADC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				927A92912BEBD34D00A7086A /* HomeCollectionViewCell.swift */,
+				927A92922BEBD34D00A7086A /* HomeCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927A92932BEBD34D00A7086A /* HomeCollectionViewCell.xib in Resources */,
 				924DA7652BD940D20097AADC /* Assets.xcassets in Resources */,
 				924DA7682BD940D20097AADC /* Base in Resources */,
 				924DA7632BD940D00097AADC /* Base in Resources */,
@@ -302,6 +309,7 @@
 				924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */,
 				924DA7892BD962980097AADC /* Layout_Extension.swift in Sources */,
 				924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */,
+				927A92942BEBD34D00A7086A /* HomeCollectionViewCell.swift in Sources */,
 				927A928C2BE7FA8500A7086A /* Constant.swift in Sources */,
 				924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */,
 				4031B51D2BE77BB2005CE4B7 /* RealmHelper.swift in Sources */,
@@ -309,7 +317,7 @@
 				924DA78C2BD962980097AADC /* KeychainHelper.swift in Sources */,
 				924DA78B2BD962980097AADC /* NetworkHelper.swift in Sources */,
 				924DA75E2BD940D00097AADC /* SceneDelegate.swift in Sources */,
-				927A928E2BEBBD3800A7086A /* HomeController.swift in Sources */,
+				927A928E2BEBBD3800A7086A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
