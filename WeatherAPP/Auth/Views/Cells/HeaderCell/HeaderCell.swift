@@ -16,4 +16,10 @@ class HeaderCell: UICollectionViewCell {
         backroundView.layer.cornerRadius = 20
     }
 
+    @IBAction func plusButtonClicked(_ sender: UIButton) {
+        print("plus")
+    }
+    @IBAction func menuButtonClicked(_ sender: UIButton) {
+        print("menu")
+    }
 }

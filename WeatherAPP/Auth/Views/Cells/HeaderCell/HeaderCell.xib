@@ -27,9 +27,10 @@
                                     <constraint firstAttribute="width" constant="28" id="xc8-Eo-uWy"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="akar-icons_plus">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" image="akar-icons_plus"/>
+                                <connections>
+                                    <action selector="plusButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="NKx-lI-xWH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-QY-Dt1">
                                 <rect key="frame" x="272" y="24" width="28" height="28"/>
@@ -39,6 +40,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="carbon_overflow-menu-vertical"/>
+                                <connections>
+                                    <action selector="menuButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3aJ-aO-ehO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="custom_cell"/>

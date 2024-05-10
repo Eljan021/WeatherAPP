@@ -16,9 +16,6 @@ class HomeViewController: UIViewController {
         collection.registerNib(with: "HomeCollectionViewCell")
         collection.registerNib(with: "FooterCell")
     }
-    
-
-
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
