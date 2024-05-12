@@ -9,8 +9,6 @@ import UIKit
 
 class HeaderCell: UICollectionViewCell {
     @IBOutlet private weak var backroundView: UIView!
-    @IBOutlet private weak var plusButton: UIButton!
-    @IBOutlet private weak var menuButton: UIButton!
     @IBOutlet private weak var countryLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
