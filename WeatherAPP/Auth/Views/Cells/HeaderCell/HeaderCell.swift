@@ -8,6 +8,16 @@
 import UIKit
 
 class HeaderCell: UICollectionViewCell {
+    @IBOutlet private weak var weekDayLabel: UILabel!
+    @IBOutlet private weak var calendarDateLabel: UILabel!
+    @IBOutlet private weak var weekAndCalendarView: UIView!
+    @IBOutlet private weak var temperatureLabel: UILabel!
+    @IBOutlet private weak var weatherLabel: UILabel!
+    @IBOutlet private weak var windspeedLabel: UILabel!
+    @IBOutlet private weak var windLabel: UILabel!
+    @IBOutlet private weak var weatherfooterView: UIView!
+    @IBOutlet private weak var windView: UIView!
+    
     @IBOutlet private weak var backroundView: UIView!
     @IBOutlet private weak var countryLabel: UILabel!
     override func awakeFromNib() {
