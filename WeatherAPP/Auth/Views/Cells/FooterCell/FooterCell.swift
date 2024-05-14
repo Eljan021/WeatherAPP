@@ -8,7 +8,15 @@
 import UIKit
 
 class FooterCell: UICollectionViewCell {
-    @IBOutlet weak var customImage: UIImageView!
+    @IBOutlet private weak var cellBackroundView: UIView!
+    @IBOutlet private weak var weekDayLabel: UILabel!
+    @IBOutlet private weak var weatherView: UIView!
+    @IBOutlet private weak var weatherLabel: UILabel!
+    @IBOutlet private weak var weatherPercentLabel: UILabel!
+    @IBOutlet private weak var morningTemperatureLabel: UILabel!
+    @IBOutlet private weak var nightTemperatureLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -111,13 +111,22 @@
                 <constraint firstAttribute="bottom" secondItem="4uB-8l-O11" secondAttribute="bottom" id="x3o-Az-Voe"/>
             </constraints>
             <size key="customSize" width="356" height="44"/>
+            <connections>
+                <outlet property="cellBackroundView" destination="4uB-8l-O11" id="XoF-un-kcb"/>
+                <outlet property="morningTemperatureLabel" destination="NqE-g9-9Fi" id="2de-oc-Yh6"/>
+                <outlet property="nightTemperatureLabel" destination="Prx-yI-ZAg" id="7xu-V3-RTA"/>
+                <outlet property="weatherLabel" destination="U8X-tS-P5C" id="7qA-lN-X2V"/>
+                <outlet property="weatherPercentLabel" destination="ysH-W5-S2u" id="HXZ-b0-0e1"/>
+                <outlet property="weatherView" destination="0P9-Co-H1u" id="vkz-RD-Bha"/>
+                <outlet property="weekDayLabel" destination="GtI-Bp-fVV" id="tuD-WC-uxp"/>
+            </connections>
             <point key="canvasLocation" x="331.29770992366412" y="78.16901408450704"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="fluent_weather-rain-showers-day-24-regular" width="56" height="56"/>
         <namedColor name="footer_cell">
-            <color red="0.25970332858743211" green="0.46915192234809922" blue="0.74174467782781583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.25882352941176473" green="0.46666666666666667" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
