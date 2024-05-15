@@ -10,7 +10,7 @@ import UIKit
 class HomeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var homeCollection: UICollectionView!
-    
+    var headerItem: WeatherModel?
     override func awakeFromNib() {
         super.awakeFromNib()
         homeCollection.register(UINib(
@@ -39,6 +39,8 @@ extension HomeCollectionViewCell: UICollectionViewDelegate,
         switch indexPath.section {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
+            guard let item = headerItem else {return UICollectionViewCell()}
+            cell.configureView(data: item)
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FooterCell", for: indexPath) as! FooterCell

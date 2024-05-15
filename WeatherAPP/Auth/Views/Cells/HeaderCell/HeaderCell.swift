@@ -26,6 +26,15 @@ class HeaderCell: UICollectionViewCell {
      headerview()
         backroundView.layer.cornerRadius = 20
     }
+    
+    func configureView(data: WeatherModel){
+        temperatureLabel.text = "\(data.currentWeather?.temperature ?? 0) \(data.currentWeatherUnits?.temperature ?? "")"
+        calendarDateLabel.text = data.currentWeather?.time ?? ""
+//        weekDayLabel.text = data.weekDay
+//        weatherLabel.text = data.weather
+        windspeedLabel.text = "\(data.currentWeather?.windspeed ?? 0) \(data.currentWeatherUnits?.windspeed ?? "")"
+        
+    }
     func headerview(){
         backroundView.clipsToBounds = true
         backroundView.setGradientBackground(colorTop: .headertopCell, colorBottom: .headerbottomCell)

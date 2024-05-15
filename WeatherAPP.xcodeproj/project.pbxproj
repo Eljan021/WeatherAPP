@@ -35,9 +35,8 @@
 		927A92A12BED33D800A7086A /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A929E2BED33D800A7086A /* HeaderCell.swift */; };
 		927A92A92BED602C00A7086A /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927A92A82BED602C00A7086A /* FooterCell.xib */; };
 		927A92AA2BED602C00A7086A /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92A72BED602C00A7086A /* FooterCell.swift */; };
-		927A92B22BF35BDB00A7086A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92B12BF35BDB00A7086A /* HomeViewModel.swift */; };
 		927A92B42BF3657500A7086A /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92B32BF3657500A7086A /* WeatherModel.swift */; };
-		927A92B62BF3698700A7086A /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92B52BF3698700A7086A /* WeatherViewModel.swift */; };
+		92B92CBA2BF50EBD002656F7 /* WeatherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B92CB92BF50EBD002656F7 /* WeatherMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,9 +80,8 @@
 		927A929F2BED33D800A7086A /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		927A92A72BED602C00A7086A /* FooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
 		927A92A82BED602C00A7086A /* FooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
-		927A92B12BF35BDB00A7086A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		927A92B32BF3657500A7086A /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
-		927A92B52BF3698700A7086A /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		92B92CB92BF50EBD002656F7 /* WeatherMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				927A92822BE7812500A7086A /* Model */,
 				924DA79B2BDC6BE00097AADC /* Views */,
 				924DA7972BD963A10097AADC /* Controller */,
-				924DA7962BD963970097AADC /* ViewModel */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -164,21 +161,12 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		924DA7962BD963970097AADC /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				927A92B12BF35BDB00A7086A /* HomeViewModel.swift */,
-				927A92B52BF3698700A7086A /* WeatherViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		924DA7972BD963A10097AADC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				927A92A22BED39BF00A7086A /* Login */,
 				927A92892BE7F44A00A7086A /* TabBarController.swift */,
-				927A928D2BEBBD3800A7086A /* HomeViewController.swift */,
+				92B92CB82BF50B1B002656F7 /* HomeViewController */,
+				927A92A22BED39BF00A7086A /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,21 +174,20 @@
 		924DA79B2BDC6BE00097AADC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				924DA7A62BDE448B0097AADC /* Model */,
 				924DA79E2BDC6C480097AADC /* Cells */,
 				924DA79D2BDC6C2A0097AADC /* CustomView */,
-				924DA79C2BDC6C1B0097AADC /* Storyoards */,
+				924DA79C2BDC6C1B0097AADC /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		924DA79C2BDC6C1B0097AADC /* Storyoards */ = {
+		924DA79C2BDC6C1B0097AADC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				924DA7612BD940D00097AADC /* Login.storyboard */,
 				927A92852BE7EDAE00A7086A /* Home.storyboard */,
 			);
-			path = Storyoards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		924DA79D2BDC6C2A0097AADC /* CustomView */ = {
@@ -220,18 +207,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		924DA7A62BDE448B0097AADC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		927A92822BE7812500A7086A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				927A92832BE7813700A7086A /* User.swift */,
 				927A92B32BF3657500A7086A /* WeatherModel.swift */,
+				92B92CB92BF50EBD002656F7 /* WeatherMock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +251,14 @@
 				927A92A82BED602C00A7086A /* FooterCell.xib */,
 			);
 			path = FooterCell;
+			sourceTree = "<group>";
+		};
+		92B92CB82BF50B1B002656F7 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				927A928D2BEBBD3800A7086A /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,17 +346,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927A92B22BF35BDB00A7086A /* HomeViewModel.swift in Sources */,
 				924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */,
 				927A928A2BE7F44A00A7086A /* TabBarController.swift in Sources */,
 				924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */,
 				924DA78A2BD962980097AADC /* Extensions.swift in Sources */,
 				924DA7602BD940D00097AADC /* LoginViewController.swift in Sources */,
 				924DA7892BD962980097AADC /* Layout_Extension.swift in Sources */,
+				92B92CBA2BF50EBD002656F7 /* WeatherMock.swift in Sources */,
 				924DA75C2BD940D00097AADC /* AppDelegate.swift in Sources */,
 				927A92AA2BED602C00A7086A /* FooterCell.swift in Sources */,
 				927A92942BEBD34D00A7086A /* HomeCollectionViewCell.swift in Sources */,
-				927A92B62BF3698700A7086A /* WeatherViewModel.swift in Sources */,
 				927A928C2BE7FA8500A7086A /* Constant.swift in Sources */,
 				924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */,
 				4031B51D2BE77BB2005CE4B7 /* RealmHelper.swift in Sources */,
