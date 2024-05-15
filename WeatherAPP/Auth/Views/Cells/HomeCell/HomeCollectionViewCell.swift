@@ -44,6 +44,11 @@ extension HomeCollectionViewCell: UICollectionViewDelegate,
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FooterCell", for: indexPath) as! FooterCell
+            let time = headerItem?.daily?.time?[indexPath.row] ?? ""
+            let percent = "\(headerItem?.daily?.precipitationProbabilityMean?[indexPath.row] ?? 0)%"
+            let morning = "\(headerItem?.daily?.temperature2MMax?[indexPath.row] ?? 0)°C"
+            let night = "\(headerItem?.daily?.temperature2MMax?[indexPath.row] ?? 0)°C"
+            cell.configureCell(time: time, percent: percent, morningTemp: morning, nightTemp: night)
             return cell
         default:
             return UICollectionViewCell()

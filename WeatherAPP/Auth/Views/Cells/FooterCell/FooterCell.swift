@@ -21,5 +21,17 @@ class FooterCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configureCell(
+        time: String,
+        percent: String,
+        morningTemp: String,
+        nightTemp: String
+    ) {
+        weekDayLabel.text = time
+        weatherPercentLabel.text = percent
+        morningTemperatureLabel.text = morningTemp
+        nightTemperatureLabel.text = nightTemp
+    }
 
 }

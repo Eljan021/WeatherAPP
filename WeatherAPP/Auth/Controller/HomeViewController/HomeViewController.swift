@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collection: UICollectionView!
-    private (set) var weatherList: [WeatherModel]?
+    private (set) var weatherList: [WeatherModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.registerNib(with: "HomeCollectionViewCell")
@@ -18,54 +18,31 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func getList() {
-        weatherList = [
-            WeatherModel(
-                latitude: MockWeatherData.latitude,
-                longitude: Int(MockWeatherData.longitude),
-                generationTimeMS: MockWeatherData.generationTimeMs,
-                UTCOffsetSeconds: MockWeatherData.utcOffsetSeconds,
-                timezone: MockWeatherData.timezone,
-                timezoneAbbreviation: MockWeatherData.timezoneAbbreviation,
-                elevation: Int(MockWeatherData.elevation),
-                currentWeatherUnits: MockWeatherData.currentWeatherUnits,
-                currentWeather: MockWeatherData.currentWeather
-            ),
-            WeatherModel(
-                latitude: MockWeatherData.latitude,
-                longitude: Int(MockWeatherData.longitude),
-                generationTimeMS: MockWeatherData.generationTimeMs,
-                UTCOffsetSeconds: MockWeatherData.utcOffsetSeconds,
-                timezone: MockWeatherData.timezone,
-                timezoneAbbreviation: MockWeatherData.timezoneAbbreviation,
-                elevation: Int(MockWeatherData.elevation),
-                currentWeatherUnits: MockWeatherData.currentWeatherUnits,
-                currentWeather: MockWeatherData.currentWeather
-            ),
-            WeatherModel(
-                latitude: MockWeatherData.latitude,
-                longitude: Int(MockWeatherData.longitude),
-                generationTimeMS: MockWeatherData.generationTimeMs,
-                UTCOffsetSeconds: MockWeatherData.utcOffsetSeconds,
-                timezone: MockWeatherData.timezone,
-                timezoneAbbreviation: MockWeatherData.timezoneAbbreviation,
-                elevation: Int(MockWeatherData.elevation),
-                currentWeatherUnits: MockWeatherData.currentWeatherUnits,
-                currentWeather: MockWeatherData.currentWeather
-            )
-        ]
+        if let path = Bundle.main.path(forResource: "weatherJson", ofType: "json") {
+            do {
+                let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
+                let weatherData = try JSONDecoder().decode(WeatherModel.self, from: jsonData)
+                weatherList.append(weatherData)
+                collection.reloadData()
+            } catch {
+                print("Error parsing JSON: \(error)")
+            }
+        } else {
+            print("File not found")
+        }
     }
     
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return weatherList?.count ?? 0
+        weatherList.count
         
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
-        guard let item = weatherList?[indexPath.row] else {return UICollectionViewCell()}
+        let item = weatherList[indexPath.row]
         cell.headerItem = item
         return cell
     }
