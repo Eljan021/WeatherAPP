@@ -14,6 +14,8 @@ struct WeatherModel: Codable {
     let utcOffsetSeconds: Int?
     let timezone, timezoneAbbreviation: String?
     let elevation: Int?
+    let hourlyUnits: HourlyUnits?
+    let hourly: Hourly?
     let currentWeatherUnits: CurrentWeatherUnits?
     let currentWeather: CurrentWeather?
     let dailyUnits: DailyUnits?
@@ -26,6 +28,8 @@ struct WeatherModel: Codable {
         case timezone
         case timezoneAbbreviation = "timezone_abbreviation"
         case elevation
+        case hourlyUnits = "hourly_units"
+        case hourly
         case currentWeatherUnits = "current_weather_units"
         case currentWeather = "current_weather"
         case dailyUnits = "daily_units"
@@ -82,5 +86,25 @@ struct DailyUnits: Codable {
         case temperature2MMax = "temperature_2m_max"
         case temperature2MMin = "temperature_2m_min"
         case precipitationProbabilityMean = "precipitation_probability_mean"
+    }
+}
+// MARK: - Hourly
+struct Hourly: Codable {
+    let time: [String]?
+    let temperature2M: [Double]?
+
+    enum CodingKeys: String, CodingKey {
+        case time
+        case temperature2M = "temperature_2m"
+    }
+}
+
+// MARK: - HourlyUnits
+struct HourlyUnits: Codable {
+    let time, temperature2M: String?
+
+    enum CodingKeys: String, CodingKey {
+        case time
+        case temperature2M = "temperature_2m"
     }
 }
