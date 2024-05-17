@@ -14,33 +14,36 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collection: UICollectionView!
-    private var templist: WeatherModel?
-     var weatherList: [WeatherProtocol] = []
+    var weatherList: [WeatherModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.registerNib(with: "HomeCollectionViewCell")
 //        getList()
         getListrequest()
     }
-    var succsesCallback: (() -> Void)?
+    var successCallback: (() -> Void)?
     var errorCallback: ((String) -> Void)?
     
-    func getWeatherList() -> [WeatherProtocol]{
-        return weatherList
-    }
+//    func getWeatherList() -> [WeatherProtocol]{
+//        return weatherList
+//    }
     
     fileprivate func getListrequest(){
-        WeatherManager.shared.getTemperatureList { [weak self] responseData, errorString in
+        WeatherManager.shared.getTemperature(latitude: "40.40", longitude: "49.86") { [weak self] responseData, errorString in
             guard let self = self else {return}
             if let errorString = errorString {
                 self.errorCallback?(errorString)
             } else if let responseData = responseData {
-                self.templist = responseData
-//                self.weatherList = responseData.results ?? []
-                self.succsesCallback?()
+                self.weatherList.append(responseData)
+                self.reloadCollection()
             }
         }
-        
+    }
+    
+    fileprivate func reloadCollection() {
+        DispatchQueue.main.async {
+            self.collection.reloadData()
+        }
     }
     
     fileprivate func getList() {
@@ -49,7 +52,7 @@ class HomeViewController: UIViewController {
             do {
                 let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
                 let weatherData = try JSONDecoder().decode(WeatherModel.self, from: jsonData)
-//                weatherList.append(weatherData)
+//                weatherList.append(weatherData as! WeatherProtocol)
                 collection.reloadData()
             } catch {
                 print("Error parsing JSON: \(error)")
@@ -70,7 +73,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
         let item = weatherList[indexPath.row]
-//        cell.headerItem = item
+        cell.headerItem = item
         return cell
     }
     

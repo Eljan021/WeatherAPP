@@ -121,6 +121,7 @@
 		924DA75A2BD940D00097AADC /* WeatherAPP */ = {
 			isa = PBXGroup;
 			children = (
+				92B92CC22BF7CA09002656F7 /* Network */,
 				924DA7952BD963850097AADC /* Core */,
 				924DA7942BD9637A0097AADC /* Auth */,
 				924DA7822BD962900097AADC /* Helpers */,
@@ -137,14 +138,10 @@
 				924DA7842BD962980097AADC /* Extensions.swift */,
 				924DA7862BD962980097AADC /* KeychainHelper.swift */,
 				924DA7832BD962980097AADC /* Layout_Extension.swift */,
-				924DA7852BD962980097AADC /* NetworkHelper.swift */,
-				924DA7872BD962980097AADC /* NetworkManager.swift */,
 				924DA7882BD962980097AADC /* UserDefaultsHelper.swift */,
 				4031B51C2BE77BB2005CE4B7 /* RealmHelper.swift */,
 				927A928B2BE7FA8500A7086A /* Constant.swift */,
 				92B92CBB2BF51800002656F7 /* weatherJson.json */,
-				92B92CC02BF6514F002656F7 /* WeatherHelper.swift */,
-				92B92CBE2BF650EF002656F7 /* WeatherManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -265,6 +262,33 @@
 				927A928D2BEBBD3800A7086A /* HomeViewController.swift */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		92B92CC22BF7CA09002656F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				92B92CC42BF7CA22002656F7 /* Weather */,
+				92B92CC32BF7CA17002656F7 /* Core */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		92B92CC32BF7CA17002656F7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				924DA7852BD962980097AADC /* NetworkHelper.swift */,
+				924DA7872BD962980097AADC /* NetworkManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		92B92CC42BF7CA22002656F7 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				92B92CBE2BF650EF002656F7 /* WeatherManager.swift */,
+				92B92CC02BF6514F002656F7 /* WeatherHelper.swift */,
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

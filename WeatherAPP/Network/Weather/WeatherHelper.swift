@@ -8,7 +8,7 @@
 import Foundation
 
 enum WeatherHelper: String {
-    case hourly = "https://api.open-meteo.com/v1/forecast?latitude=40.425&longitude=49.7956&hourly=temperature_2m"
+    case current = "/forecast?"
     var path: String {
         return NetworkHelper.shared.requestURL(url: self.rawValue)
     }
