@@ -46,22 +46,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    fileprivate func getList() {
-        //api'a request atib gelen response parse edib weather list'e appenden edeceksen
-        if let path = Bundle.main.path(forResource: "weatherJson", ofType: "json") {
-            do {
-                let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
-                let weatherData = try JSONDecoder().decode(WeatherModel.self, from: jsonData)
-//                weatherList.append(weatherData as! WeatherProtocol)
-                collection.reloadData()
-            } catch {
-                print("Error parsing JSON: \(error)")
-            }
-        } else {
-            print("File not found")
-        }
-    }
-    
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     

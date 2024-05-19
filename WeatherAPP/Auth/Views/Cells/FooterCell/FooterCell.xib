@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,7 +74,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" red="0.1210886192" green="0.13779736819999999" blue="0.56605455790000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" name="footer_cell"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="oYD-ql-CVH" secondAttribute="bottom" constant="4" id="1W4-Cc-3FP"/>
                 <constraint firstItem="oYD-ql-CVH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="G8J-a2-cgg"/>
@@ -91,4 +92,9 @@
             <point key="canvasLocation" x="331.29770992366412" y="78.16901408450704"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <namedColor name="footer_cell">
+            <color red="0.25882352941176473" green="0.46666666666666667" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
