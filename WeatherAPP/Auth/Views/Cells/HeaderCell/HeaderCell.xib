@@ -206,7 +206,16 @@
             <size key="customSize" width="520" height="399"/>
             <connections>
                 <outlet property="backroundView" destination="gJ2-gf-yOc" id="0lN-DM-AVp"/>
+                <outlet property="calendarDateLabel" destination="JhG-yu-jCV" id="eEI-wv-tkb"/>
                 <outlet property="countryLabel" destination="PHE-kH-ZlW" id="ePo-Wb-oeo"/>
+                <outlet property="temperatureLabel" destination="Btp-fk-aGK" id="zeY-Ym-Rbl"/>
+                <outlet property="weatherLabel" destination="oAY-k9-DIY" id="qp2-aa-9He"/>
+                <outlet property="weatherfooterView" destination="g1S-Yt-6SW" id="LfO-1V-vq1"/>
+                <outlet property="weekAndCalendarView" destination="5Dv-qS-9Q2" id="ill-Wa-sS2"/>
+                <outlet property="weekDayLabel" destination="EFk-5F-HGX" id="TrA-aU-UJz"/>
+                <outlet property="windLabel" destination="3Nf-9s-yBw" id="Sp7-Ps-Hid"/>
+                <outlet property="windView" destination="Tl9-5i-IfJ" id="q1P-P8-Igj"/>
+                <outlet property="windspeedLabel" destination="GQ1-Ui-e2H" id="usF-c1-xIf"/>
             </connections>
             <point key="canvasLocation" x="456.48854961832058" y="141.90140845070422"/>
         </collectionViewCell>

@@ -25,10 +25,10 @@ enum ErrorTypes: String, Error {
 class NetworkHelper {
     static let shared = NetworkHelper()
     
-    private let baseURL = "https://api.themoviedb.org/3/"
+    private let baseURL = "https://api.open-meteo.com/v1/"
     let header = [
         "accept": "application/json",
-        "Authorization": "Bearer \(String(data: KeychainHelper.retrieveData(forService: "token")!, encoding: .utf8) ?? "")"
+        "Authorization": "Bearer "
     ]
     
     func requestURL(url: String) -> String {
