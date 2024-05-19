@@ -1,5 +1,5 @@
 //
-//  MoreCollectionViewCell.swift
+//  MoreHeaderCell.swift
 //  WeatherAPP
 //
 //  Created by Eljan on 19.05.24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoreCollectionViewCell: UICollectionViewCell {
+class MoreHeaderCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
