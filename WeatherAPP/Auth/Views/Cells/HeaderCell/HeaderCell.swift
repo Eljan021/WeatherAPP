@@ -11,6 +11,7 @@ protocol WeatherProtocol {
     var percent: String {get}
     var morningTemp: String {get}
     var nightTemp: String {get}
+    var country: String {get}
 }
 
 class HeaderCell: UICollectionViewCell {

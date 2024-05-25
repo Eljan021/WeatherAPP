@@ -80,7 +80,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                                 <subviews>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search..." minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="FP9-5b-QFc">
-                                        <rect key="frame" x="24" y="56" width="321" height="36"/>
+                                        <rect key="frame" x="24" y="56" width="309" height="36"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="4mK-VV-fQl"/>
@@ -88,11 +88,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <outlet property="delegate" destination="86A-BH-xI3" id="6nS-Z4-Dqs"/>
+                                            <outlet property="delegate" destination="86A-BH-xI3" id="8Tx-nW-icc"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wms-aQ-bo9">
-                                        <rect key="frame" x="357" y="60" width="24" height="24"/>
+                                        <rect key="frame" x="345" y="60" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="4dZ-Z7-ZGe"/>
                                             <constraint firstAttribute="width" constant="24" id="P65-Xm-ViU"/>
@@ -100,7 +100,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title=" "/>
                                         <connections>
-                                            <action selector="searchButtonAction:" destination="86A-BH-xI3" eventType="touchUpInside" id="bIA-dC-QTA"/>
+                                            <action selector="searchButtonAction:" destination="86A-BH-xI3" eventType="touchUpInside" id="54d-yQ-ZCM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,15 +110,15 @@
                                     <constraint firstAttribute="bottom" secondItem="FP9-5b-QFc" secondAttribute="bottom" constant="4" id="3Pu-jz-Lhr"/>
                                     <constraint firstAttribute="height" constant="96" id="4Sr-wG-u0N"/>
                                     <constraint firstAttribute="bottom" secondItem="Wms-aQ-bo9" secondAttribute="bottom" constant="12" id="7qm-pi-HXa"/>
-                                    <constraint firstAttribute="trailing" secondItem="Wms-aQ-bo9" secondAttribute="trailing" constant="12" id="Xnz-E3-YsX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wms-aQ-bo9" secondAttribute="trailing" constant="24" id="Xnz-E3-YsX"/>
                                     <constraint firstItem="Wms-aQ-bo9" firstAttribute="leading" secondItem="FP9-5b-QFc" secondAttribute="trailing" constant="12" id="e38-d7-fas"/>
                                     <constraint firstItem="FP9-5b-QFc" firstAttribute="leading" secondItem="xXW-BV-WfC" secondAttribute="leading" constant="24" id="j9n-cw-Ka8"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GnD-sc-UHE">
-                                <rect key="frame" x="16" y="120" width="393" height="649"/>
+                                <rect key="frame" x="0.0" y="120" width="393" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3AU-n4-d4a">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3AU-n4-d4a">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -133,8 +133,8 @@
                             <constraint firstItem="06N-6F-a3C" firstAttribute="bottom" secondItem="GnD-sc-UHE" secondAttribute="bottom" id="8wz-47-VYf"/>
                             <constraint firstItem="xXW-BV-WfC" firstAttribute="leading" secondItem="06N-6F-a3C" secondAttribute="leading" id="Bz1-XT-QEF"/>
                             <constraint firstItem="GnD-sc-UHE" firstAttribute="top" secondItem="xXW-BV-WfC" secondAttribute="bottom" constant="24" id="EXJ-jP-1BL"/>
-                            <constraint firstItem="GnD-sc-UHE" firstAttribute="trailing" secondItem="06N-6F-a3C" secondAttribute="trailing" constant="16" id="Jkb-sd-3R5"/>
-                            <constraint firstItem="GnD-sc-UHE" firstAttribute="leading" secondItem="06N-6F-a3C" secondAttribute="leading" constant="16" id="KzA-zb-zuB"/>
+                            <constraint firstItem="GnD-sc-UHE" firstAttribute="trailing" secondItem="06N-6F-a3C" secondAttribute="trailing" id="Jkb-sd-3R5"/>
+                            <constraint firstItem="GnD-sc-UHE" firstAttribute="leading" secondItem="06N-6F-a3C" secondAttribute="leading" id="KzA-zb-zuB"/>
                             <constraint firstItem="xXW-BV-WfC" firstAttribute="top" secondItem="XOQ-po-Uaw" secondAttribute="top" id="SmU-qy-riL"/>
                             <constraint firstItem="06N-6F-a3C" firstAttribute="trailing" secondItem="xXW-BV-WfC" secondAttribute="trailing" id="USk-G4-PZl"/>
                         </constraints>
