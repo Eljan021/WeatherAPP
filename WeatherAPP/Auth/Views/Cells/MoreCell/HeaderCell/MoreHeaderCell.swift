@@ -14,8 +14,8 @@ class MoreHeaderCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func configureCell(model: WeatherProtocol) {
-        cellLabel.text = model.country
+    func configureCell(title: String) {
+        cellLabel.text = title
     }
 
 }

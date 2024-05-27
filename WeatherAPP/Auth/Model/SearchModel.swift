@@ -18,14 +18,35 @@ struct SearchModel: Codable {
 }
 
 // MARK: - Result
-struct ResultSC: Codable {
+struct ResultSC: Codable, WeatherProtocol {
+    
+    var time: String {
+        "test"
+    }
+    
+    var percent: String {
+        "test"
+    }
+    
+    var morningTemp: String {
+        "test"
+    }
+    
+    var nightTemp: String {
+        "test"
+    }
+    
+    var country: String {
+        countryResult ?? ""
+    }
+    
     let id: Int?
     let name: String?
     let latitude, longitude: Double?
     let elevation: Int?
     let featureCode, countryCode, timezone: String?
     let population, countryID: Int?
-    let country: String?
+    let countryResult: String?
 
     enum CodingKeys: String, CodingKey {
         case id, name, latitude, longitude, elevation
@@ -33,6 +54,6 @@ struct ResultSC: Codable {
         case countryCode = "country_code"
         case timezone, population
         case countryID = "country_id"
-        case country
+        case countryResult = "country"
     }
 }

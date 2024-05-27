@@ -22,7 +22,6 @@
 		924DA78D2BD962980097AADC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7872BD962980097AADC /* NetworkManager.swift */; };
 		924DA78E2BD962980097AADC /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7882BD962980097AADC /* UserDefaultsHelper.swift */; };
 		924DA7912BD962A80097AADC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7902BD962A80097AADC /* SDWebImage */; };
-		924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 924DA7922BD962A80097AADC /* SDWebImageMapKit */; };
 		924DA79A2BD964580097AADC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924DA7992BD964580097AADC /* RegisterViewController.swift */; };
 		927A92842BE7813700A7086A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927A92832BE7813700A7086A /* User.swift */; };
 		927A92862BE7EDAE00A7086A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927A92852BE7EDAE00A7086A /* Home.storyboard */; };
@@ -108,7 +107,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4031B51B2BE77B5F005CE4B7 /* RealmSwift in Frameworks */,
-				924DA7932BD962A80097AADC /* SDWebImageMapKit in Frameworks */,
 				924DA7912BD962A80097AADC /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				924DA79E2BDC6C480097AADC /* Cells */,
-				924DA79D2BDC6C2A0097AADC /* CustomView */,
 				924DA79C2BDC6C1B0097AADC /* Storyboards */,
 			);
 			path = Views;
@@ -207,13 +204,6 @@
 				9288AE1B2BF97479004A002F /* Home */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		924DA79D2BDC6C2A0097AADC /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 		924DA79E2BDC6C480097AADC /* Cells */ = {
@@ -387,7 +377,6 @@
 			name = WeatherAPP;
 			packageProductDependencies = (
 				924DA7902BD962A80097AADC /* SDWebImage */,
-				924DA7922BD962A80097AADC /* SDWebImageMapKit */,
 				4031B51A2BE77B5F005CE4B7 /* RealmSwift */,
 			);
 			productName = WeatherAPP;
@@ -641,7 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8Y35H4W;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -649,6 +638,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,7 +662,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UBF8Y35H4W;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -680,6 +670,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,11 +739,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
-		};
-		924DA7922BD962A80097AADC /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 924DA78F2BD962A80097AADC /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

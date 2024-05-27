@@ -12,26 +12,14 @@ class MoreViewController: UIViewController {
     @IBOutlet private weak var searchButton: UIButton!
     @IBOutlet private weak var textField: UITextField!
     
-    var searchlist: [WeatherProtocol] = []
-    var searchList: SearchModel?
+    var searchList: [ResultSC]?
     var weatherList: WeatherModel?
     private var hideSearchField: Bool = true
-    func getSearchList() -> [WeatherProtocol] {
-        return searchlist
-    }
-    func getSearhCount() -> Int{
-        return searchlist.count
-    }
-    
-    var successCallback: ((SearchModel?) -> Void)?
-    var successCallbackWeather: ((WeatherModel?) -> Void)?
-    var errorCallback: ((String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       setupView()
-        reloadCollectionView()
+        
+        setupView()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -51,8 +39,8 @@ class MoreViewController: UIViewController {
                 setupView()
             })
     }
+    
     fileprivate func setupView() {
-        //        viewModel.delegate = self
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -66,15 +54,20 @@ class MoreViewController: UIViewController {
         
     }
     
-
+    
     fileprivate func reloadCollectionView() {
         DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
     }
     
+    fileprivate func getSearchList() -> [ResultSC]? {
+        return searchList ?? nil
+    }
     
-    
+    fileprivate func getSearhCount() -> Int{
+        return searchList?.count ?? 0
+    }
 }
 
 extension MoreViewController: UICollectionViewDataSource,
@@ -86,10 +79,13 @@ extension MoreViewController: UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeCell(cellClass: MoreHeaderCell.self, indexPath: indexPath)
-        let model = getSearchList()[indexPath.row]
-        cell.configureCell(model: model)
+        let model = getSearchList()?[indexPath.row]
+        cell.configureCell(title: model?.country ?? "")
         return cell
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width:collectionView.frame.width, height: 320)
     }
     
     
@@ -101,10 +97,10 @@ extension MoreViewController: UITextFieldDelegate {
         SearchManager.shared.getSearchList(query: text) {[weak self] response, error in
             guard let self = self else {return}
             if let error = error {
-                self.errorCallback?(error)
-            }else if let response = response {
+                print(#function, error)
+            } else if let response = response?.results {
                 self.searchList = response
-                self.successCallback?(searchList)
+                self.reloadCollectionView()
             }
             
         }
@@ -113,20 +109,17 @@ extension MoreViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let text = textField.text else {return}
         WeatherManager.shared.getTemperature(
-            latitude: String(searchList?.results?.first?.latitude ?? 40.49),
-            longitude: String(searchList?.results?.first?.longitude ?? 49.49)
+            latitude: String(searchList?.first?.latitude ?? 40.49),
+            longitude: String(searchList?.first?.longitude ?? 49.49)
         ) { [weak self] response, error in
             guard let self = self else {return}
             if let error = error {
-                self.errorCallback?(error)
+                print(#function, error)
             }else if let response = response {
                 self.weatherList = response
-                self.successCallbackWeather?(weatherList)
+                self.reloadCollectionView()
             }
-            }
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width:collectionView.frame.width, height: 320)
+        }
     }
 }
 
