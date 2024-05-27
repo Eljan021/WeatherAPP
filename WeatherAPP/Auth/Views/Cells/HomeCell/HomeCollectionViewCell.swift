@@ -60,4 +60,9 @@ extension HomeCollectionViewCell: UICollectionViewDelegate,
             width:collectionView.frame.width,
             height:  indexPath.section == 0 ? collectionView.frame.height * 0.5 : 44 )
         }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("hgfghg")
+//        SearchManager.shared.getSearchList(query: <#T##String#>, complete: <#T##((SearchModel?, String?) -> Void)##((SearchModel?, String?) -> Void)##(SearchModel?, String?) -> Void#>)
+    }
 }

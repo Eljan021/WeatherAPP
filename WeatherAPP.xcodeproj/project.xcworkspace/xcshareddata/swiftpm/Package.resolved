@@ -1,5 +1,4 @@
 {
-  "originHash" : "92e90d2129eb29d2a445ebef7a1497ad9ffa4c419a12202535e6d70d35dea1e9",
   "pins" : [
     {
       "identity" : "realm-core",
@@ -16,7 +15,7 @@
       "location" : "https://github.com/realm/realm-swift",
       "state" : {
         "branch" : "master",
-        "revision" : "6f8d5e390139c32b5b27d54a26a0b5f7b5cfe857"
+        "revision" : "21ac01d5ae30dcc156e0e43e47c4afe39cc0367f"
       }
     },
     {
@@ -24,10 +23,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/SDWebImage",
       "state" : {
-        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
-        "version" : "5.19.1"
+        "revision" : "5642d1ffe3dbe628592443bd14154e31929727b4",
+        "version" : "5.19.2"
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

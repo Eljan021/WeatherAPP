@@ -89,7 +89,7 @@
                 <outlet property="weatherPercentLabel" destination="ysH-W5-S2u" id="HXZ-b0-0e1"/>
                 <outlet property="weekDayLabel" destination="GtI-Bp-fVV" id="tuD-WC-uxp"/>
             </connections>
-            <point key="canvasLocation" x="331.29770992366412" y="78.16901408450704"/>
+            <point key="canvasLocation" x="331.29770992366412" y="77.464788732394368"/>
         </collectionViewCell>
     </objects>
     <resources>
