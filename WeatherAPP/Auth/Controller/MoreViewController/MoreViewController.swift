@@ -65,7 +65,7 @@ class MoreViewController: UIViewController {
         return searchList ?? nil
     }
     
-    fileprivate func getSearhCount() -> Int{
+    fileprivate func getSearchCount() -> Int{
         return searchList?.count ?? 0
     }
 }
@@ -74,18 +74,24 @@ extension MoreViewController: UICollectionViewDataSource,
                               UICollectionViewDelegate,
                               UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return getSearhCount()
+        return getSearchCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeCell(cellClass: MoreHeaderCell.self, indexPath: indexPath)
         let model = getSearchList()?[indexPath.row]
-        cell.configureCell(title: model?.country ?? "")
+        cell.configureCellCity(title: model?.cityname ?? "")
+        cell.configureCellCounrty(title: model?.country ?? "")
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width:collectionView.frame.width, height: 320)
+        CGSize(width:collectionView.frame.width, height: 120)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Home", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
+        navigationController?.pushViewController(vc!, animated: true)
+    
     }
     
     

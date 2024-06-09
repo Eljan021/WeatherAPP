@@ -20,6 +20,11 @@ struct SearchModel: Codable {
 // MARK: - Result
 struct ResultSC: Codable, WeatherProtocol {
     
+    var cityname: String {
+        name ?? ""
+    }
+    
+    
     var time: String {
         "test"
     }

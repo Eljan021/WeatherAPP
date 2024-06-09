@@ -8,14 +8,19 @@
 import UIKit
 
 class MoreHeaderCell: UICollectionViewCell {
-    @IBOutlet private weak var cellLabel: UILabel!
+    @IBOutlet private weak var cityLabel: UILabel!
+    @IBOutlet private weak var countryLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    func configureCell(title: String) {
-        cellLabel.text = title
+    func configureCellCity(title: String) {
+        cityLabel.text = title
+       
+    }
+    func configureCellCounrty(title: String) {
+        countryLabel.text = title
     }
 
 }

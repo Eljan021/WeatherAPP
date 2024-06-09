@@ -26,12 +26,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttn-vD-TtN">
+                                <rect key="frame" x="135" y="18" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="4Us-Ar-Sbi" secondAttribute="bottom" constant="12" id="APD-lm-b6i"/>
                             <constraint firstItem="4Us-Ar-Sbi" firstAttribute="top" secondItem="XQ7-Z5-Pe5" secondAttribute="top" constant="12" id="Wpl-P0-MxN"/>
                             <constraint firstItem="4Us-Ar-Sbi" firstAttribute="leading" secondItem="XQ7-Z5-Pe5" secondAttribute="leading" constant="12" id="ocl-IK-eto"/>
+                            <constraint firstItem="ttn-vD-TtN" firstAttribute="centerX" secondItem="XQ7-Z5-Pe5" secondAttribute="centerX" id="rEU-tW-k40"/>
+                            <constraint firstItem="ttn-vD-TtN" firstAttribute="centerY" secondItem="XQ7-Z5-Pe5" secondAttribute="centerY" id="uM8-SS-0Q5"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -45,7 +53,8 @@
             </constraints>
             <size key="customSize" width="318" height="60"/>
             <connections>
-                <outlet property="cellLabel" destination="4Us-Ar-Sbi" id="azy-8F-T0x"/>
+                <outlet property="cityLabel" destination="4Us-Ar-Sbi" id="IJR-im-fLC"/>
+                <outlet property="countryLabel" destination="ttn-vD-TtN" id="hhv-R4-e4x"/>
             </connections>
             <point key="canvasLocation" x="309.92366412213738" y="23.239436619718312"/>
         </collectionViewCell>
